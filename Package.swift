@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "SP3Data",
             resources: [
-                .process("Localization"),
+                .process("Resources/Localization"),
                 .copy("Resources/SP3AssetsPNG"),
                 .copy("Resources/SP3ExtractedData"),
             ]),
