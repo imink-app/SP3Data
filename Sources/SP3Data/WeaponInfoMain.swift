@@ -1,25 +1,75 @@
 import Foundation
 
-extension WeaponInfoMain: CaseIterable {
+public extension WeaponInfoMain {
     
-    public static let allCases: [WeaponInfoMain] = {
-        let jsonUrl = Bundle.module.url(forResource: "WeaponInfoMain", withExtension: "json", subdirectory: "SP3ExtractedData/mush")!
+    static let allCases: [WeaponInfoMain] = {
+        let jsonUrl = extractedDataDir
+            .appendingPathComponent("mush", isDirectory: true)
+            .appendingPathComponent("WeaponInfoMain.json", isDirectory: false)
         let jsonData = try! Data(contentsOf: jsonUrl)
         let result = try! JSONDecoder().decode([WeaponInfoMain].self, from: jsonData)
         return result
     }()
+    
+    static let versusWeapons = allCases.filter { $0.type == .versus }
 }
 
 public extension WeaponInfoMain {
+    
     var localizedName: String {
         let key = "CommonMsg/Weapon/WeaponName_Main/" + rowId
         return Bundle.module.localizedString(forKey: key, value: "[\(rowId)]", table: "Extracted")
+    }
+    
+    enum WeaponImageStyle: CaseIterable {
+        case normal
+        case flat
+        case badge00
+        case badge01
+        case sticker00
+        /// shining sticker
+        case sticker01
+    }
+    
+    func imageURL(style: WeaponImageStyle) -> URL? {
+        let url: URL
+        switch style {
+        case .normal:
+            url = extractedImageDir
+                .appendingPathComponent("weapon", isDirectory: true)
+                .appendingPathComponent("Wst_\(rowId).png", isDirectory: false)
+        case .flat:
+            url = extractedImageDir
+                .appendingPathComponent("weapon_flat", isDirectory: true)
+                .appendingPathComponent("Path_Wst_\(rowId).png", isDirectory: false)
+        case .badge00:
+            url = extractedImageDir
+                .appendingPathComponent("badge", isDirectory: true)
+                .appendingPathComponent("Badge_WeaponLevel_\(rowId)_Lv00.png", isDirectory: false)
+        case .badge01:
+            url = extractedImageDir
+                .appendingPathComponent("badge", isDirectory: true)
+                .appendingPathComponent("Badge_WeaponLevel_\(rowId)_Lv01.png", isDirectory: false)
+        case .sticker00:
+            url = extractedImageDir
+                .appendingPathComponent("zakka", isDirectory: true)
+                .appendingPathComponent("Stc_Sti_Wst_\(rowId)_Lv00.png", isDirectory: false)
+        case .sticker01:
+            url = extractedImageDir
+                .appendingPathComponent("zakka", isDirectory: true)
+                .appendingPathComponent("Hla_Sti_Wst_\(rowId)_Lv01.png", isDirectory: false)
+        }
+        if (try? url.checkResourceIsReachable()) == true {
+            return url
+        } else {
+            return nil
+        }
     }
 }
 
 // MARK: - Generated Structure
 
-public struct WeaponInfoMain: Codable, Hashable {
+public struct WeaponInfoMain: Codable, Hashable, CaseIterable {
     
     public let debugDispColumn: Int
     public let debugDispOrder: Int

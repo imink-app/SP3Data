@@ -27,4 +27,13 @@ final class WeaponInfoMainTests: XCTestCase {
         let jr = WeaponInfoMain.allCases.first { $0.id == 10 }
         XCTAssertEqual(jr?.localizedName, "新叶射击枪")
     }
+    
+    func testImage() {
+        let versusWeapons = WeaponInfoMain.allCases.filter { $0.type == .versus }
+        for weapon in versusWeapons {
+            for style in WeaponInfoMain.WeaponImageStyle.allCases {
+                XCTAssertNotNil(weapon.imageURL(style: style))
+            }
+        }
+    }
 }
