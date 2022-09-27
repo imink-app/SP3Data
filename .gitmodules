@@ -1,0 +1,3 @@
+[submodule "Sources/SP3Data/Resources/SP3ExtractedData"]
+	path = Sources/SP3Data/Resources/SP3ExtractedData
+	url = https://github.com/imink-app/SP3ExtractedData
