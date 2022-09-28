@@ -17,11 +17,11 @@ public extension WeaponInfoMain {
 public extension WeaponInfoMain {
     
     var localizedName: String {
-        let key = "CommonMsg/Weapon/WeaponName_Main/" + rowId
-        return Bundle.module.localizedString(forKey: key, value: "[\(rowId)]", table: "Extracted")
+        let key = "CommonMsg/Weapon/WeaponName_Main/" + __rowId
+        return Bundle.module.localizedString(forKey: key, value: "[\(__rowId)]", table: "Extracted")
     }
     
-    enum WeaponImageStyle: CaseIterable {
+    enum ImageStyle: CaseIterable {
         case normal
         case flat
         case badge00
@@ -31,39 +31,35 @@ public extension WeaponInfoMain {
         case sticker01
     }
     
-    func imageURL(style: WeaponImageStyle) -> URL? {
+    func imageURL(style: ImageStyle = .normal) -> URL? {
         let url: URL
         switch style {
         case .normal:
             url = extractedImageDir
                 .appendingPathComponent("weapon", isDirectory: true)
-                .appendingPathComponent("Wst_\(rowId).png", isDirectory: false)
+                .appendingPathComponent("Wst_\(__rowId).png", isDirectory: false)
         case .flat:
             url = extractedImageDir
                 .appendingPathComponent("weapon_flat", isDirectory: true)
-                .appendingPathComponent("Path_Wst_\(rowId).png", isDirectory: false)
+                .appendingPathComponent("Path_Wst_\(__rowId).png", isDirectory: false)
         case .badge00:
             url = extractedImageDir
                 .appendingPathComponent("badge", isDirectory: true)
-                .appendingPathComponent("Badge_WeaponLevel_\(rowId)_Lv00.png", isDirectory: false)
+                .appendingPathComponent("Badge_WeaponLevel_\(__rowId)_Lv00.png", isDirectory: false)
         case .badge01:
             url = extractedImageDir
                 .appendingPathComponent("badge", isDirectory: true)
-                .appendingPathComponent("Badge_WeaponLevel_\(rowId)_Lv01.png", isDirectory: false)
+                .appendingPathComponent("Badge_WeaponLevel_\(__rowId)_Lv01.png", isDirectory: false)
         case .sticker00:
             url = extractedImageDir
                 .appendingPathComponent("zakka", isDirectory: true)
-                .appendingPathComponent("Stc_Sti_Wst_\(rowId)_Lv00.png", isDirectory: false)
+                .appendingPathComponent("Stc_Sti_Wst_\(__rowId)_Lv00.png", isDirectory: false)
         case .sticker01:
             url = extractedImageDir
                 .appendingPathComponent("zakka", isDirectory: true)
-                .appendingPathComponent("Hla_Sti_Wst_\(rowId)_Lv01.png", isDirectory: false)
+                .appendingPathComponent("Hla_Sti_Wst_\(__rowId)_Lv01.png", isDirectory: false)
         }
-        if (try? url.checkResourceIsReachable()) == true {
-            return url
-        } else {
-            return nil
-        }
+        return url.nilIfUnreachable()
     }
 }
 
@@ -97,12 +93,12 @@ public struct WeaponInfoMain: Codable, Hashable, CaseIterable {
     public let type: WeaponType
     public let uiParam: [UIParam]
     public let weaponInfoForCoop: String
-    public let rowId: String
+    public let __rowId: String
     
     public enum HitEffectorType: String, Codable, Hashable {
         case blaster = "Blaster"
         case charger = "Charger"
-        case defaultHitEffectorTypeDefault = "Default"
+        case `default` = "Default"
         case maneuver = "Maneuver"
         case roller = "Roller"
         case saber = "Saber"
@@ -113,14 +109,6 @@ public struct WeaponInfoMain: Codable, Hashable, CaseIterable {
         case slosherBearLeader = "Slosher_BearLeader"
         case slosherLauncherLeader = "Slosher_LauncherLeader"
         case spinner = "Spinner"
-    }
-    
-    public enum WeaponType: String, Codable, Hashable {
-        case coop = "Coop"
-        case mission = "Mission"
-        case other = "Other"
-        case rival = "Rival"
-        case versus = "Versus"
     }
 
     enum CodingKeys: String, CodingKey {
@@ -153,47 +141,11 @@ public struct WeaponInfoMain: Codable, Hashable, CaseIterable {
         case type = "Type"
         case uiParam = "UIParam"
         case weaponInfoForCoop = "WeaponInfoForCoop"
-        case rowId = "__RowId"
+        case __rowId = "__RowId"
     }
 }
 
 extension WeaponInfoMain {
-    
-    public struct DamageRate: Codable, Hashable {
-        
-        public let damageRateInfoRow: String
-        public let extraInfo: ExtraInfo
-        
-        public enum ExtraInfo: String, Codable, Hashable {
-            case blasterWeakBlast = "BlasterWeakBlast"
-            case extraBombCore = "ExtraBombCore"
-            case fullCharge = "FullCharge"
-            case normal = "Normal"
-            case rollerCore = "RollerCore"
-            case saberChargeShot = "SaberChargeShot"
-            case saberChargeSlash = "SaberChargeSlash"
-            case saberShot = "SaberShot"
-            case saberSlash = "SaberSlash"
-            case shelterCanopy = "ShelterCanopy"
-            case shooterVariableRepeat = "ShooterVariableRepeat"
-        }
-        
-        enum CodingKeys: String, CodingKey {
-            case damageRateInfoRow = "DamageRateInfoRow"
-            case extraInfo = "ExtraInfo"
-        }
-    }
-    
-    public struct HitEffector: Codable, Hashable {
-        
-        public let extraInfo: String
-        public let hitEffectorType: String
-        
-        enum CodingKeys: String, CodingKey {
-            case extraInfo = "ExtraInfo"
-            case hitEffectorType = "HitEffectorType"
-        }
-    }
     
     public struct UIParam: Codable, Hashable {
         

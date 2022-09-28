@@ -5,7 +5,7 @@ final class WeaponInfoMainTests: XCTestCase {
     
     func testAllWeapons() throws {
         let weapons = WeaponInfoMain.allCases
-        XCTAssert(weapons.count == 186)
+        XCTAssertEqual(weapons.count, 186)
         
         for weapon in weapons {
             if weapon.type == .versus, ![10, 45].contains(weapon.id) {
@@ -16,10 +16,10 @@ final class WeaponInfoMainTests: XCTestCase {
         }
         
         let versusWeaponsCount = weapons.filter { $0.type == .versus }.count
-        XCTAssert(versusWeaponsCount == 55)
+        XCTAssertEqual(versusWeaponsCount, 55)
         
         let coopWeaponsCount = weapons.filter { $0.type == .coop }.count
-        XCTAssert(coopWeaponsCount == versusWeaponsCount - 2 - 1 + 5)
+        XCTAssertEqual(coopWeaponsCount, versusWeaponsCount - 2 - 1 + 5)
         // 2 scope charger, 1 hero weapon is not included. plus 5 grizzco weapons
     }
     
@@ -31,7 +31,7 @@ final class WeaponInfoMainTests: XCTestCase {
     func testImage() {
         let versusWeapons = WeaponInfoMain.allCases.filter { $0.type == .versus }
         for weapon in versusWeapons {
-            for style in WeaponInfoMain.WeaponImageStyle.allCases {
+            for style in WeaponInfoMain.ImageStyle.allCases {
                 XCTAssertNotNil(weapon.imageURL(style: style))
             }
         }
