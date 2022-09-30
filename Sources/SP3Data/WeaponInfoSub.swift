@@ -11,38 +11,40 @@ public extension WeaponInfoSub {
         return result
     }()
     
-    static let versusWeapons = allCases.filter { $0.type == .versus }
-}
-
-public extension WeaponInfoSub {
-    
-    var localizedName: String {
+    var localizedName: String? {
         let key = "CommonMsg/Weapon/WeaponName_Sub/" + __rowId
-        return Bundle.module.localizedString(forKey: key, value: "[\(__rowId)]", table: "Extracted")
+        let value = Bundle.module.localizedString(forKey: key, value: "[\(__rowId)]", table: "Extracted")
+        return value == __rowId ? nil : value
     }
     
-    enum ImageStyle: CaseIterable {
-        case normal
-    }
-    
-    func imageURL(style: ImageStyle = .normal) -> URL? {
+    func imageURL(style: WeaponImageStyle = .normal) -> URL? {
         let url: URL
         switch style {
         case .normal:
             url = extractedImageDir
+                .appendingPathComponent("weapon", isDirectory: true)
+                .appendingPathComponent("Wst_\(__rowId).png", isDirectory: false)
+        case .flat:
+            url = extractedImageDir
                 .appendingPathComponent("subspe", isDirectory: true)
                 .appendingPathComponent("Wsb_\(__rowId)00.png", isDirectory: false)
+        default:
+            return nil
         }
         return url.nilIfUnreachable()
+    }
+    
+    static var supportedImageStyles: [WeaponImageStyle] {
+        return [.normal, .flat]
     }
 }
 
 // MARK: - Generated Structure
 
-public struct WeaponInfoSub: Codable, Hashable, CaseIterable {
+public struct WeaponInfoSub: WeaponInfo, Codable, Hashable, CaseIterable {
     
-    public let defaultDamageRateInfoRow: String
-    public let defaultHitEffectorType: String
+    public let defaultDamageRateInfoRow: DamageRateInfoRow
+    public let defaultHitEffectorType: HitEffectorType
     public let extraDamageRateInfoRowSet: [DamageRate]
     public let extraHitEffectorInfoSet: [HitEffector]
     public let id: Int

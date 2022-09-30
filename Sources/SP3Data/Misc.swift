@@ -3,6 +3,10 @@ import Foundation
 extension URL {
     
     func nilIfUnreachable() -> URL? {
-        return (try? checkResourceIsReachable()) == true ? self : nil
+        if (try? checkResourceIsReachable()) == true {
+            return self
+        } else {
+            return nil
+        }
     }
 }

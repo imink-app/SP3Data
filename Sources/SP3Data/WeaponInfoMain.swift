@@ -11,14 +11,10 @@ public extension WeaponInfoMain {
         return result
     }()
     
-    static let versusWeapons = allCases.filter { $0.type == .versus }
-}
-
-public extension WeaponInfoMain {
-    
-    var localizedName: String {
+    var localizedName: String? {
         let key = "CommonMsg/Weapon/WeaponName_Main/" + __rowId
-        return Bundle.module.localizedString(forKey: key, value: "[\(__rowId)]", table: "Extracted")
+        let value = Bundle.module.localizedString(forKey: key, value: "[\(__rowId)]", table: "Extracted")
+        return value == __rowId ? nil : value
     }
     
     var subWeaponRowID: String? {
@@ -35,17 +31,7 @@ public extension WeaponInfoMain {
         return sub
     }
     
-    enum ImageStyle: CaseIterable {
-        case normal
-        case flat
-        case badge00
-        case badge01
-        case sticker00
-        /// shining sticker
-        case sticker01
-    }
-    
-    func imageURL(style: ImageStyle = .normal) -> URL? {
+    func imageURL(style: WeaponImageStyle = .normal) -> URL? {
         let url: URL
         switch style {
         case .normal:
@@ -72,18 +58,24 @@ public extension WeaponInfoMain {
             url = extractedImageDir
                 .appendingPathComponent("zakka", isDirectory: true)
                 .appendingPathComponent("Hla_Sti_Wst_\(__rowId)_Lv01.png", isDirectory: false)
+        default:
+            return nil
         }
         return url.nilIfUnreachable()
+    }
+    
+    static var supportedImageStyles: [WeaponImageStyle] {
+        return [.normal, .flat, .badge00, .badge01, .sticker00, .sticker01]
     }
 }
 
 // MARK: - Generated Structure
 
-public struct WeaponInfoMain: Codable, Hashable, CaseIterable {
+public struct WeaponInfoMain: WeaponInfo, Codable, Hashable, CaseIterable {
     
     public let debugDispColumn: Int
     public let debugDispOrder: Int
-    public let defaultDamageRateInfoRow: String
+    public let defaultDamageRateInfoRow: DamageRateInfoRow
     public let defaultHitEffectorType: HitEffectorType
     public let extraDamageRateInfoRowSet: [DamageRate]
     public let extraHitEffectorInfoSet: [HitEffector]
@@ -108,22 +100,6 @@ public struct WeaponInfoMain: Codable, Hashable, CaseIterable {
     public let uiParam: [UIParam]
     public let weaponInfoForCoop: String
     public let __rowId: String
-    
-    public enum HitEffectorType: String, Codable, Hashable {
-        case blaster = "Blaster"
-        case charger = "Charger"
-        case `default` = "Default"
-        case maneuver = "Maneuver"
-        case roller = "Roller"
-        case saber = "Saber"
-        case shelter = "Shelter"
-        case shooter = "Shooter"
-        case slosher = "Slosher"
-        case slosherBathtub = "Slosher_Bathtub"
-        case slosherBearLeader = "Slosher_BearLeader"
-        case slosherLauncherLeader = "Slosher_LauncherLeader"
-        case spinner = "Spinner"
-    }
 
     enum CodingKeys: String, CodingKey {
         case debugDispColumn = "DebugDispColumn"
