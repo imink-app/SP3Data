@@ -21,6 +21,20 @@ public extension WeaponInfoMain {
         return Bundle.module.localizedString(forKey: key, value: "[\(__rowId)]", table: "Extracted")
     }
     
+    var subWeaponRowID: String? {
+        var sub = subWeapon
+        guard !sub.isEmpty else {
+            return nil
+        }
+        guard sub.hasPrefix("Work/Gyml/"), sub.hasSuffix(".spl__WeaponInfoSub.gyml") else {
+            assertionFailure("unknown sub weapon format")
+            return nil
+        }
+        sub.removeFirst(10)
+        sub.removeLast(24)
+        return sub
+    }
+    
     enum ImageStyle: CaseIterable {
         case normal
         case flat
