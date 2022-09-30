@@ -25,7 +25,7 @@ public struct HitEffector: Codable, Hashable {
     public let extraInfo: String
     
     enum CodingKeys: String, CodingKey {
-        case extraInfo = "ExtraInfo"
         case hitEffectorType = "HitEffectorType"
+        case extraInfo = "ExtraInfo"
     }
 }
