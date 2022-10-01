@@ -3,7 +3,7 @@ import Foundation
 public extension WeaponInfoSub {
     
     static let allCases: [WeaponInfoSub] = {
-        let jsonUrl = extractedDataDir
+        let jsonUrl = SP3Resources.extractedDataDir
             .appendingPathComponent("mush", isDirectory: true)
             .appendingPathComponent("WeaponInfoSub.json", isDirectory: false)
         let jsonData = try! Data(contentsOf: jsonUrl)
@@ -13,19 +13,19 @@ public extension WeaponInfoSub {
     
     var localizedName: String? {
         let key = "CommonMsg/Weapon/WeaponName_Sub/" + __rowId
-        let value = Bundle.module.localizedString(forKey: key, value: "[\(__rowId)]", table: "Extracted")
-        return value == __rowId ? nil : value
+        let value = Bundle.module.localizedString(forKey: key, value: nil, table: "Extracted")
+        return value == key ? nil : value
     }
     
     func imageURL(style: WeaponImageStyle = .normal) -> URL? {
         let url: URL
         switch style {
         case .normal:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("weapon", isDirectory: true)
                 .appendingPathComponent("Wst_\(__rowId).png", isDirectory: false)
         case .flat:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("subspe", isDirectory: true)
                 .appendingPathComponent("Wsb_\(__rowId)00.png", isDirectory: false)
         default:

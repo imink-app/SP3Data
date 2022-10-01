@@ -1,14 +1,13 @@
 import XCTest
 @testable import SP3Data
 
-let weapons: [any WeaponInfo] = WeaponInfoMain.allCases + WeaponInfoSub.allCases + WeaponInfoSpecial.allCases
+let allWeapons: [any WeaponInfo] = WeaponInfoMain.allCases + WeaponInfoSub.allCases + WeaponInfoSpecial.allCases
+let versusWeapons: [any WeaponInfo] = WeaponInfoMain.versusWeapons + WeaponInfoSub.versusWeapons + WeaponInfoSpecial.versusWeapons
+let coopWeapons: [any WeaponInfo] = WeaponInfoMain.coopWeapons + WeaponInfoSub.coopWeapons + WeaponInfoSpecial.coopWeapons
 
 final class WeaponInfoTests: XCTestCase {
     
     func testMain() {
-        _testLocalization(weapon: WeaponInfoMain.self)
-        _testImage(weapon: WeaponInfoMain.self)
-        
         XCTAssertEqual(WeaponInfoMain.allCases.count, 186)
         
         for weapon in WeaponInfoMain.versusWeapons {
@@ -25,9 +24,6 @@ final class WeaponInfoTests: XCTestCase {
     }
     
     func testSub() {
-        _testLocalization(weapon: WeaponInfoSub.self)
-        _testImage(weapon: WeaponInfoSub.self)
-        
         XCTAssertEqual(WeaponInfoSub.allCases.count, 31)
         XCTAssertEqual(WeaponInfoSub.versusWeapons.count, 14)
         XCTAssertEqual(WeaponInfoSub.coopWeapons.count, 2)
@@ -35,16 +31,29 @@ final class WeaponInfoTests: XCTestCase {
     }
     
     func testSpecial() {
-        _testLocalization(weapon: WeaponInfoSpecial.self)
-        _testImage(weapon: WeaponInfoSpecial.self)
-        
         XCTAssertEqual(WeaponInfoSpecial.allCases.count, 45)
         XCTAssertEqual(WeaponInfoSpecial.versusWeapons.count, 15)
         XCTAssertEqual(WeaponInfoSpecial.coopWeapons.count, 9)
     }
     
+    func testLocalization() {
+        // all weapons should have localized name
+        for weapon in allWeapons {
+            XCTAssertNotNil(weapon.localizedName)
+        }
+    }
+    
+    func testImage() {
+        // only versus weapons have image
+        for weapon in versusWeapons {
+            for style in type(of: weapon).supportedImageStyles {
+                XCTAssertNotNil(weapon.imageURL(style: style), "missing image for \(weapon.debugDescription)")
+            }
+        }
+    }
+    
     func testAllDamageRate() throws {
-        for weapon in weapons {
+        for weapon in allWeapons {
             XCTAssert(DamageRateInfoRow.allCases.contains(weapon.defaultDamageRateInfoRow))
             for info in weapon.extraDamageRateInfoRowSet {
                 XCTAssert(DamageRateInfoRow.allCases.contains(info.damageRateInfoRow))
@@ -53,24 +62,10 @@ final class WeaponInfoTests: XCTestCase {
     }
     
     func testAllHitEffector() throws {
-        for weapon in weapons {
+        for weapon in allWeapons {
             XCTAssert(HitEffectorType.allCases.contains(weapon.defaultHitEffectorType))
             for info in weapon.extraHitEffectorInfoSet {
                 XCTAssert(HitEffectorType.allCases.contains(info.hitEffectorType))
-            }
-        }
-    }
-    
-    func _testLocalization<Weapon: WeaponInfo>(weapon: Weapon.Type) {
-        for weapon in Weapon.allCases {
-            XCTAssertNotNil(weapon.localizedName)
-        }
-    }
-    
-    func _testImage<Weapon: WeaponInfo>(weapon: Weapon.Type) {
-        for weapon in Weapon.versusWeapons {
-            for style in Weapon.supportedImageStyles {
-                XCTAssertNotNil(weapon.imageURL(style: style), "missing image for \(weapon.debugDescription)")
             }
         }
     }

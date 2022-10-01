@@ -3,7 +3,7 @@ import Foundation
 public extension WeaponInfoSpecial {
     
     static let allCases: [WeaponInfoSpecial] = {
-        let jsonUrl = extractedDataDir
+        let jsonUrl = SP3Resources.extractedDataDir
             .appendingPathComponent("mush", isDirectory: true)
             .appendingPathComponent("WeaponInfoSpecial.json", isDirectory: false)
         let jsonData = try! Data(contentsOf: jsonUrl)
@@ -15,27 +15,27 @@ public extension WeaponInfoSpecial {
     
     var localizedName: String? {
         let key = "CommonMsg/Weapon/WeaponName_Special/" + __rowId
-        let value = Bundle.module.localizedString(forKey: key, value: "[\(__rowId)]", table: "Extracted")
-        return value == __rowId ? nil : value
+        let value = Bundle.module.localizedString(forKey: key, value: nil, table: "Extracted")
+        return value == key ? nil : value
     }
     
     func imageURL(style: WeaponImageStyle = .normal) -> URL? {
         let url: URL
         switch style {
         case .flat:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("subspe", isDirectory: true)
                 .appendingPathComponent("Wsp_\(__rowId)00.png", isDirectory: false)
         case .badge00:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("badge", isDirectory: true)
                 .appendingPathComponent("Badge_WinCount_WeaponSp_\(__rowId)_Lv00.png", isDirectory: false)
         case .badge01:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("badge", isDirectory: true)
                 .appendingPathComponent("Badge_WinCount_WeaponSp_\(__rowId)_Lv01.png", isDirectory: false)
         case .badge02:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("badge", isDirectory: true)
                 .appendingPathComponent("Badge_WinCount_WeaponSp_\(__rowId)_Lv02.png", isDirectory: false)
         default:

@@ -3,7 +3,7 @@ import Foundation
 public extension WeaponInfoMain {
     
     static let allCases: [WeaponInfoMain] = {
-        let jsonUrl = extractedDataDir
+        let jsonUrl = SP3Resources.extractedDataDir
             .appendingPathComponent("mush", isDirectory: true)
             .appendingPathComponent("WeaponInfoMain.json", isDirectory: false)
         let jsonData = try! Data(contentsOf: jsonUrl)
@@ -13,8 +13,8 @@ public extension WeaponInfoMain {
     
     var localizedName: String? {
         let key = "CommonMsg/Weapon/WeaponName_Main/" + __rowId
-        let value = Bundle.module.localizedString(forKey: key, value: "[\(__rowId)]", table: "Extracted")
-        return value == __rowId ? nil : value
+        let value = Bundle.module.localizedString(forKey: key, value: nil, table: "Extracted")
+        return value == key ? nil : value
     }
     
     var subWeaponRowID: String? {
@@ -35,27 +35,27 @@ public extension WeaponInfoMain {
         let url: URL
         switch style {
         case .normal:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("weapon", isDirectory: true)
                 .appendingPathComponent("Wst_\(__rowId).png", isDirectory: false)
         case .flat:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("weapon_flat", isDirectory: true)
                 .appendingPathComponent("Path_Wst_\(__rowId).png", isDirectory: false)
         case .badge00:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("badge", isDirectory: true)
                 .appendingPathComponent("Badge_WeaponLevel_\(__rowId)_Lv00.png", isDirectory: false)
         case .badge01:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("badge", isDirectory: true)
                 .appendingPathComponent("Badge_WeaponLevel_\(__rowId)_Lv01.png", isDirectory: false)
         case .sticker00:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("zakka", isDirectory: true)
                 .appendingPathComponent("Stc_Sti_Wst_\(__rowId)_Lv00.png", isDirectory: false)
         case .sticker01:
-            url = extractedImageDir
+            url = SP3Resources.extractedImageDir
                 .appendingPathComponent("zakka", isDirectory: true)
                 .appendingPathComponent("Hla_Sti_Wst_\(__rowId)_Lv01.png", isDirectory: false)
         default:

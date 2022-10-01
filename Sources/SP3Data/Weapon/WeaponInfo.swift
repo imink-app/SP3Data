@@ -5,6 +5,7 @@ public protocol WeaponInfo: CaseIterable, CustomDebugStringConvertible {
     var id: Int { get }
     var type: WeaponType { get }
     var label: String { get }
+    var specActor: String { get }
     var defaultDamageRateInfoRow: DamageRateInfoRow { get }
     var defaultHitEffectorType: HitEffectorType { get }
     var extraDamageRateInfoRowSet: [DamageRate] { get }

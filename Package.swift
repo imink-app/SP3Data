@@ -20,11 +20,13 @@ let package = Package(
     targets: [
         .target(
             name: "SP3Data",
+            dependencies: ["SeedChecker"],
             resources: [
                 .process("Resources/Localization"),
                 .copy("Resources/SP3AssetsPNG"),
                 .copy("Resources/SP3ExtractedData"),
             ]),
+        .target(name: "SeedChecker"),
         .testTarget(
             name: "SP3DataTest",
             dependencies: ["SP3Data"]),
