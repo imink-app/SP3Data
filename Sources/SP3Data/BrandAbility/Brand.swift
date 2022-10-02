@@ -1,4 +1,7 @@
 import Foundation
+import SeedChecker
+
+public typealias Brand = SeedChecker.Brand
 
 public extension Brand {
     
@@ -17,15 +20,6 @@ public extension Brand {
     static var allCases: [Brand] = _BrandTraitsInfo.shared.traits.keys
         .filter { $0.rawValue != 18 }
         .sorted { $0.rawValue < $1.rawValue }
-}
-
-public struct Brand: RawRepresentable, Hashable, CaseIterable {
-    
-    public let rawValue: Int8
-    
-    public init(rawValue: Int8) {
-        self.rawValue = rawValue
-    }
 }
 
 extension Brand: LosslessStringConvertible {

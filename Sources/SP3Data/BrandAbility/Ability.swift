@@ -1,20 +1,9 @@
 import Foundation
+import SeedChecker
 
-public enum AbilityChip: UInt8, CaseIterable {
-    case inkSaverMain = 0 // MainInk_Save
-    case inkSaverSub // SubInk_Save
-    case inkRecoveryUp // InkRecovery_Up
-    case runSpeedUp // HumanMove_Up
-    case swimSpeedUp // SquidMove_Up
-    case specialChargeUp // SpecialIncrease_Up
-    case specialSaver // RespawnSpecialGauge_Save
-    case specialPowerUp // SpecialSpec_Up
-    case quickRespawn // RespawnTime_Save
-    case quickSuperJump // JumpTime_Save
-    case subPowerUp // SubSpec_Up
-    case inkResistanceUp // OpInkEffect_Reduction
-    case subResistanceUp // SubEffect_Reduction
-    case intensifyAction // Action_Up
+public typealias AbilityChip = SeedChecker.Ability
+
+public extension AbilityChip {
     
     var localizedName: String? {
         let key = "CommonMsg/Gear/GearPowerName/" + description
@@ -27,6 +16,11 @@ public enum AbilityChip: UInt8, CaseIterable {
             .appendingPathComponent("skill/\(description).png", isDirectory: false)
             .nilIfUnreachable()
     }
+}
+
+extension AbilityChip: CaseIterable {
+    
+    public static var allCases: [AbilityChip] = (0..<AbilityChip.count.rawValue).map { Ability(rawValue: $0)! }
 }
 
 extension AbilityChip: LosslessStringConvertible {
@@ -47,6 +41,7 @@ extension AbilityChip: LosslessStringConvertible {
         case .inkResistanceUp: return "OpInkEffect_Reduction"
         case .subResistanceUp: return "SubEffect_Reduction"
         case .intensifyAction: return "Action_Up"
+        default: return "Ability[\(rawValue)]"
         }
     }
     

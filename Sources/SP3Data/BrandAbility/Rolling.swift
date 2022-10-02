@@ -1,13 +1,9 @@
 import Foundation
-@_implementationOnly import SeedChecker
+import SeedChecker
 
-public struct AbilityRollingSeed: RawRepresentable, Hashable, Codable, Comparable, ExpressibleByIntegerLiteral {
-    
-    public var rawValue: UInt32
-    
-    public init(rawValue: UInt32) {
-        self.rawValue = rawValue
-    }
+public typealias AbilityRollingSeed = SeedChecker.AbilityRollingSeed
+
+extension AbilityRollingSeed: Codable, Comparable, ExpressibleByIntegerLiteral {
     
     public init(integerLiteral value: UInt32) {
         self.init(rawValue: value)
@@ -18,8 +14,7 @@ public struct AbilityRollingSeed: RawRepresentable, Hashable, Codable, Comparabl
     }
     
     public mutating func nextAbility(brand: Brand, drink: AbilityChip? = nil) -> AbilityChip {
-        let scb = get_ability(rawValue, brand.scBrand!, drink?.scAbility ?? .noDrink).ability
-        return AbilityChip(scAbility: scb)
+        return get_ability(self, brand, drink ?? .noDrink).ability
     }
     
     public static func search(brand: Brand, abilities: [AbilityChip], in range: ClosedRange<AbilityRollingSeed>) -> SearchSequence {
@@ -34,26 +29,26 @@ public struct AbilityRollingSeed: RawRepresentable, Hashable, Codable, Comparabl
         
         public struct Iterator: IteratorProtocol {
             let sequence: SearchSequence
-            var currentSeed: SCRollingSeed?
+            var currentSeed: AbilityRollingSeed?
             
             init(sequence: SearchSequence) {
                 self.sequence = sequence
-                currentSeed = sequence.range.lowerBound.rawValue
+                currentSeed = sequence.range.lowerBound
             }
             
             public mutating func next() -> AbilityRollingSeed? {
                 guard let currentSeed = currentSeed else { return nil }
-                var abilities = sequence.abilities.map(\.scAbility)
-                let seed = search_seed(currentSeed, sequence.range.upperBound.rawValue, sequence.brand.scBrand!, &abilities, Int32(abilities.count))
-                if seed == SCRollingSeed_Invalid {
+                var abilities = sequence.abilities
+                let seed = search_seed_in_range(currentSeed, sequence.range.upperBound, sequence.brand, &abilities, abilities.count)
+                if seed == .invalid {
                     self.currentSeed = nil
                     return nil
-                } else if seed == sequence.range.upperBound.rawValue {
+                } else if seed == sequence.range.upperBound {
                     self.currentSeed = nil
-                    return AbilityRollingSeed(rawValue: seed)
+                    return seed
                 } else {
-                    self.currentSeed = seed + 1
-                    return AbilityRollingSeed(rawValue: seed)
+                    self.currentSeed = AbilityRollingSeed(seed.rawValue + 1)
+                    return seed
                 }
             }
         }
@@ -61,44 +56,6 @@ public struct AbilityRollingSeed: RawRepresentable, Hashable, Codable, Comparabl
         public func makeIterator() -> Iterator {
             Iterator(sequence: self)
         }
-    }
-}
-
-private extension SCAbility {
-    static var noDrink: SCAbility {
-        return SCAbility(UInt8(SCAbility_NoDrink))
-    }
-}
-
-private extension AbilityChip {
-    
-    var scAbility: SCAbility {
-        return SCAbility(rawValue: rawValue)
-    }
-    
-    init(scAbility: SCAbility) {
-        self.init(rawValue: scAbility.rawValue)!
-    }
-}
-
-private extension Brand {
-    
-    static var scBrandTable: [Brand: SCBrand] = {
-        var result: [Brand: SCBrand] = [:]
-        for i in 0..<SCBrand_Count.rawValue {
-            let scb = SCBrand(rawValue: i)
-            let b = Brand(scBrand: scb)
-            result[b] = scb
-        }
-        return result
-    }()
-    
-    var scBrand: SCBrand? {
-        return Brand.scBrandTable[self]
-    }
-    
-    init(scBrand: SCBrand) {
-        self.init(rawValue: brand_code(scBrand))
     }
 }
 
