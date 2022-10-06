@@ -37,17 +37,15 @@ final class WeaponInfoTests: XCTestCase {
     }
     
     func testLocalization() {
-        // all weapons should have localized name
-        for weapon in allWeapons {
-            XCTAssertNotNil(weapon.localizedName)
+        for weapon in versusWeapons + coopWeapons {
+            XCTAssertNotNil(weapon.localizedName, "no localized name for \(weapon.debugDescription)")
         }
     }
     
     func testImage() {
-        // only versus weapons have image
         for weapon in versusWeapons {
             for style in type(of: weapon).supportedImageStyles {
-                XCTAssertNotNil(weapon.imageURL(style: style), "missing image for \(weapon.debugDescription)")
+                XCTAssertNotNil(weapon.imageURL(style: style), "no image for \(weapon.debugDescription)")
             }
         }
     }

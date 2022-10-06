@@ -1,7 +1,7 @@
 import Foundation
-import SeedChecker
+import seed_checker
 
-public typealias AbilityRollingSeed = SeedChecker.AbilityRollingSeed
+public typealias AbilityRollingSeed = seed_checker.AbilityRollingSeed
 
 extension AbilityRollingSeed: Codable, Comparable, ExpressibleByIntegerLiteral {
     
@@ -13,18 +13,18 @@ extension AbilityRollingSeed: Codable, Comparable, ExpressibleByIntegerLiteral {
         return lhs.rawValue < rhs.rawValue
     }
     
-    public mutating func nextAbility(brand: Brand, drink: AbilityChip? = nil) -> AbilityChip {
-        return get_ability(self, brand, drink ?? .noDrink).ability
+    public mutating func nextAbility(brand: Brand, drink: Ability? = nil) -> Ability {
+        return get_ability(self, brand, drink ?? .none).ability
     }
     
-    public static func search(brand: Brand, abilities: [AbilityChip], in range: ClosedRange<AbilityRollingSeed>) -> SearchSequence {
+    public static func search(brand: Brand, abilities: [Ability], in range: ClosedRange<AbilityRollingSeed>) -> SearchSequence {
         SearchSequence(brand: brand, abilities: abilities, range: range)
     }
     
     public struct SearchSequence: Sequence {
         
         let brand: Brand
-        let abilities: [AbilityChip]
+        let abilities: [Ability]
         let range: ClosedRange<AbilityRollingSeed>
         
         public struct Iterator: IteratorProtocol {
@@ -71,7 +71,7 @@ extension AbilityRollingSeed {
         rawValue ^= rawValue << 5
     }
     
-    public mutating func nextAbility(brand: Brand, drink: AbilityChip? = nil) -> AbilityChip {
+    public mutating func nextAbility(brand: Brand, drink: Ability? = nil) -> Ability {
         if let drink = drink {
             advance()
             if(rawValue % 0x64 <= 0x1D) {
@@ -92,7 +92,7 @@ extension AbilityRollingSeed {
 
 public extension Brand {
     
-    func rollingWeight(for ability: AbilityChip) -> Int {
+    func rollingWeight(for ability: Ability) -> Int {
         switch ability {
         case usualGearSkill: return _BrandTraitsInfo.shared.skillEasilyToGetParam[2]
         case unusualGearSkill: return _BrandTraitsInfo.shared.skillEasilyToGetParam[0]
@@ -100,18 +100,18 @@ public extension Brand {
         }
     }
     
-    func rollingTable(drink: AbilityChip?) -> [AbilityChip] {
+    func rollingTable(drink: Ability?) -> [Ability] {
         return Brand.rollingTables[self]![drink]!
     }
     
-    static let rollingTables: [Brand: [AbilityChip?: [AbilityChip]]] = {
-        var result: [Brand: [AbilityChip?: [AbilityChip]]] = [:]
+    static let rollingTables: [Brand: [Ability?: [Ability]]] = {
+        var result: [Brand: [Ability?: [Ability]]] = [:]
         for brand in Brand.allCases {
-            var brandTable: [AbilityChip?: [AbilityChip]] = [:]
+            var brandTable: [Ability?: [Ability]] = [:]
             brandTable[nil] = []
-            for drinkAbility in AbilityChip.allCases {
-                var drinkTable: [AbilityChip] = []
-                for ability in AbilityChip.allCases where drinkAbility != ability {
+            for drinkAbility in Ability.allCases {
+                var drinkTable: [Ability] = []
+                for ability in Ability.allCases where drinkAbility != ability {
                     drinkTable.append(contentsOf: Array(repeating: ability, count: brand.rollingWeight(for: ability)))
                 }
                 brandTable[nil]!.append(contentsOf: Array(repeating: drinkAbility, count: brand.rollingWeight(for: drinkAbility)))

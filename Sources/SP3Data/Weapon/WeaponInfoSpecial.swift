@@ -11,7 +11,7 @@ public extension WeaponInfoSpecial {
         return result
     }()
     
-    static let versusWeapons = allCases.filter { $0.type == .versus && $0.id != 20 }
+    static let versusWeapons = allCases.filter { $0.type == .versus && $0.id != 20 /* rain maker */ }
     
     var localizedName: String? {
         let key = "CommonMsg/Weapon/WeaponName_Special/" + __rowId
@@ -19,7 +19,7 @@ public extension WeaponInfoSpecial {
         return value == key ? nil : value
     }
     
-    func imageURL(style: WeaponImageStyle = .normal) -> URL? {
+    func imageURL(style: SP3ImageStyle = .default) -> URL? {
         let url: URL
         switch style {
         case .flat:
@@ -44,7 +44,7 @@ public extension WeaponInfoSpecial {
         return url.nilIfUnreachable()
     }
     
-    static var supportedImageStyles: [WeaponImageStyle] {
+    static var supportedImageStyles: [SP3ImageStyle] {
         [.flat, .badge00, .badge01, .badge02]
     }
 }

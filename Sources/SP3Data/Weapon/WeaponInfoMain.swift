@@ -31,10 +31,10 @@ public extension WeaponInfoMain {
         return sub
     }
     
-    func imageURL(style: WeaponImageStyle = .normal) -> URL? {
+    func imageURL(style: SP3ImageStyle = .default) -> URL? {
         let url: URL
         switch style {
-        case .normal:
+        case .default:
             url = SP3Resources.extractedImageDir
                 .appendingPathComponent("weapon", isDirectory: true)
                 .appendingPathComponent("Wst_\(__rowId).png", isDirectory: false)
@@ -64,8 +64,8 @@ public extension WeaponInfoMain {
         return url.nilIfUnreachable()
     }
     
-    static var supportedImageStyles: [WeaponImageStyle] {
-        return [.normal, .flat, .badge00, .badge01, .sticker00, .sticker01]
+    static var supportedImageStyles: [SP3ImageStyle] {
+        return [.default, .flat, .badge00, .badge01, .sticker00, .sticker01]
     }
 }
 

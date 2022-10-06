@@ -23,8 +23,23 @@ typedef enum __attribute__((enum_extensibility(open))) : uint8_t {
     AbilitySubResistanceUp,
     AbilityIntensifyAction,
     
+    AbilityOpeningGambit,
+    AbilityLastDitchEffort,
+    AbilityTenacity,
+    AbilityComeback,
+    AbilityNinjaSquid,
+    AbilityHaunt,
+    AbilityThermalInk,
+    AbilityRespawnPunisher,
+    AbilityAbilityDoubler,
+    AbilityStealthJump,
+    AbilityObjectShredder,
+    AbilityDropRoller,
+    
     AbilityCount,
-    AbilityNoDrink,
+    AbilityNone = UINT8_MAX,
+    
+    AbilitySmallAbilityCount = AbilityOpeningGambit,
 } Ability;
 
 typedef enum __attribute__((enum_extensibility(open))) : int8_t {
@@ -51,6 +66,9 @@ typedef enum __attribute__((enum_extensibility(open))) : int8_t {
     
     BrandMax,
 } Brand;
+
+extern const Brand *all_brands;
+extern const int all_brands_count;
 
 typedef struct {
     Ability ability;

@@ -1,25 +1,26 @@
 import Foundation
-import SeedChecker
+import seed_checker
 
-public typealias Brand = SeedChecker.Brand
+public typealias Brand = seed_checker.Brand
 
-public extension Brand {
+extension Brand: SP3Localizable, SP3ImageGetting, CaseIterable {
     
-    var localizedName: String? {
+    public var localizedName: String? {
         let key = "CommonMsg/Gear/GearBrandName/" + description
         let value = Bundle.module.localizedString(forKey: key, value: nil, table: "Extracted")
         return value == key ? nil : value
     }
     
-    var imageURL: URL? {
+    public func imageURL(style: SP3ImageStyle) -> URL? {
+        guard style == .default else { return nil }
         return SP3Resources.extractedImageDir
             .appendingPathComponent("brand/\(description).png", isDirectory: false)
             .nilIfUnreachable()
     }
     
-    static var allCases: [Brand] = _BrandTraitsInfo.shared.traits.keys
-        .filter { $0.rawValue != 18 }
-        .sorted { $0.rawValue < $1.rawValue }
+    public static let supportedImageStyles: [SP3ImageStyle] = [.default]
+    
+    public static var allCases: [Brand] = Array(UnsafeBufferPointer(start: all_brands, count: Int(all_brands_count)))
 }
 
 extension Brand: LosslessStringConvertible {

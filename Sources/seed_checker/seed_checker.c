@@ -6,16 +6,17 @@
 
 const AbilityRollingSeed AbilityRollingSeedInvalid = 0;
 
-static const Brand all_brands[] = {BrandSquidForce, BrandZink, BrandKrakOn, BrandRockenberg, BrandZekko, BrandForge, BrandFirefin, BrandSkalop, BrandSplashMob, BrandInkline, BrandTentatek, BrandTakoroka, BrandAnnaki, BrandEnperry, BrandToniKensa, BrandBarazushi, BrandEmberz, BrandGrizzco, BrandCuttlegear, BrandAmiibo};
-static const int all_brands_count = sizeof(all_brands)/sizeof(all_brands[0]);
+static const Brand _all_brands[] = {BrandSquidForce, BrandZink, BrandKrakOn, BrandRockenberg, BrandZekko, BrandForge, BrandFirefin, BrandSkalop, BrandSplashMob, BrandInkline, BrandTentatek, BrandTakoroka, BrandAnnaki, BrandEnperry, BrandToniKensa, BrandBarazushi, BrandEmberz, BrandGrizzco, BrandCuttlegear, BrandAmiibo};
+const Brand *all_brands = _all_brands;
+const int all_brands_count = sizeof(_all_brands)/sizeof(_all_brands[0]);
 
 static const Ability brand_usual_skill_table[] = {11, 9, 4, 3, 6, 7, 1, 8, 0, 12, 2, 5, 1, 10, 0, 13, 13, -1, -1, -1};
 static const Ability brand_unusual_skill_table[] = {0, 8, 12, 4, 5, 1, 2, 6, 3, 13, 9, 7, 6, 11, 10, 10, 5, -1, -1, -1};
 
 static int brand_max_num_table[BrandMax];
 static Ability brand_ability_table[BrandMax][64];
-static int brand_max_num_with_drink_table[BrandMax][AbilityCount];
-static Ability brand_ability_with_drink_table[BrandMax][AbilityCount][64];
+static int brand_max_num_with_drink_table[BrandMax][AbilitySmallAbilityCount];
+static Ability brand_ability_with_drink_table[BrandMax][AbilitySmallAbilityCount][64];
 
 static int brand_get_index(Brand brand) {
     switch (brand) {
@@ -64,7 +65,7 @@ AbilityRollingSeed advance_seed(AbilityRollingSeed x32) {
 RollingResult get_ability(AbilityRollingSeed seed, Brand brand, Ability drink) {
     RollingResult result;
     result.seed = advance_seed(seed);
-    if(drink == AbilityNoDrink) {
+    if(drink == AbilityNone) {
         int ability_roll = seed % brand_max_num_table[brand];
         result.ability = brand_ability_table[brand][ability_roll];
     } else if(seed % 0x64 <= 0x1D) {
@@ -80,7 +81,7 @@ RollingResult get_ability(AbilityRollingSeed seed, Brand brand, Ability drink) {
 static bool seed_match_sequence(AbilityRollingSeed seed, Brand brand, Ability const *ability_sequence, size_t ability_sequence_count) {
     for (int i=0; i<ability_sequence_count; i++) {
         Ability abilityToMatch = ability_sequence[i];
-        RollingResult result = get_ability(seed, brand, AbilityNoDrink);
+        RollingResult result = get_ability(seed, brand, AbilityNone);
         if (abilityToMatch != result.ability) {
             return false;;
         }
@@ -112,7 +113,7 @@ __attribute__((constructor)) void fill_table() {
         Brand brand = all_brands[i];
         int idx = 0;
         int brand_max_num = 0;
-        for (Ability ability=0; ability<AbilityCount; ability++) {
+        for (Ability ability=0; ability<AbilitySmallAbilityCount; ability++) {
             int weight = brand_weight(brand, ability);
             for (int i=0; i<weight; i++) {
                 brand_ability_table[brand][idx] = ability;
@@ -122,10 +123,10 @@ __attribute__((constructor)) void fill_table() {
             brand_max_num_table[brand] = brand_max_num;
         }
         
-        for (Ability drink=0; drink<AbilityCount; drink++) {
+        for (Ability drink=0; drink<AbilitySmallAbilityCount; drink++) {
             int idx = 0;
             int brand_drink_max_num = 0;
-            for (Ability ability=0; ability<AbilityCount; ability++) {
+            for (Ability ability=0; ability<AbilitySmallAbilityCount; ability++) {
                 if (drink == ability) {
                     continue;
                 }

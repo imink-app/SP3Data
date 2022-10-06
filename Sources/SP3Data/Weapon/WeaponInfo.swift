@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol WeaponInfo: CaseIterable, CustomDebugStringConvertible {
+public protocol WeaponInfo: SP3Localizable, SP3ImageGetting, CaseIterable, CustomDebugStringConvertible {
     var __rowId: String { get }
     var id: Int { get }
     var type: WeaponType { get }
@@ -11,10 +11,6 @@ public protocol WeaponInfo: CaseIterable, CustomDebugStringConvertible {
     var extraDamageRateInfoRowSet: [DamageRate] { get }
     var extraHitEffectorInfoSet: [HitEffector] { get }
     
-    var localizedName: String? { get }
-    func imageURL(style: WeaponImageStyle) -> URL?
-    static var supportedImageStyles: [WeaponImageStyle] { get }
-    
     static var versusWeapons: [Self] { get }
     static var coopWeapons: [Self] { get }
 }
@@ -24,14 +20,10 @@ public extension WeaponInfo {
     var debugDescription: String {
         let weaponType: String
         switch self {
-        case is WeaponInfoMain:
-            weaponType = "MainWeapon"
-        case is WeaponInfoSub:
-            weaponType = "SubWeapon"
-        case is WeaponInfoSpecial:
-            weaponType = "SpecialWeapon"
-        default:
-            weaponType = "Weapon"
+        case is WeaponInfoMain:     weaponType = "MainWeapon"
+        case is WeaponInfoSub:      weaponType = "SubWeapon"
+        case is WeaponInfoSpecial:  weaponType = "SpecialWeapon"
+        default:                    weaponType = "Weapon"
         }
         return "\(weaponType) \(__rowId) [\(localizedName ?? label)]"
     }
@@ -43,17 +35,6 @@ public extension WeaponInfo {
     static var coopWeapons: [Self] {
         return allCases.filter { $0.type == .coop }
     }
-}
-
-public enum WeaponImageStyle {
-    case normal
-    case flat
-    case badge00
-    case badge01
-    case badge02
-    case sticker00
-    /// shining sticker
-    case sticker01
 }
 
 public enum WeaponType: String, Codable, Hashable {

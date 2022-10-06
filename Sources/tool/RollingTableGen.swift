@@ -5,10 +5,10 @@ struct AbilityChipTrio: RawRepresentable, Hashable, Codable, CaseIterable {
     
     var rawValue: UInt32
     
-    var abilities: (AbilityChip, AbilityChip, AbilityChip) {
-        let a1 = AbilityChip(rawValue: UInt8(0xff & rawValue))!
-        let a2 = AbilityChip(rawValue: UInt8(0xff & (rawValue >> 8)))!
-        let a3 = AbilityChip(rawValue: UInt8(0xff & (rawValue >> 16)))!
+    var abilities: (Ability, Ability, Ability) {
+        let a1 = Ability(rawValue: UInt8(0xff & rawValue))!
+        let a2 = Ability(rawValue: UInt8(0xff & (rawValue >> 8)))!
+        let a3 = Ability(rawValue: UInt8(0xff & (rawValue >> 16)))!
         return (a1, a2, a3)
     }
     
@@ -16,7 +16,7 @@ struct AbilityChipTrio: RawRepresentable, Hashable, Codable, CaseIterable {
         self.rawValue = rawValue
     }
     
-    init(abilities: (AbilityChip, AbilityChip, AbilityChip)) {
+    init(abilities: (Ability, Ability, Ability)) {
         rawValue = UInt32(abilities.0.rawValue) &
             UInt32(abilities.1.rawValue) << 8 &
             UInt32(abilities.2.rawValue) << 16
@@ -24,9 +24,9 @@ struct AbilityChipTrio: RawRepresentable, Hashable, Codable, CaseIterable {
     
     static var allCases: [AbilityChipTrio] = {
         var result: [AbilityChipTrio] = []
-        for a1 in AbilityChip.allCases {
-            for a2 in AbilityChip.allCases {
-                for a3 in AbilityChip.allCases {
+        for a1 in Ability.allCases {
+            for a2 in Ability.allCases {
+                for a3 in Ability.allCases {
                     result.append(AbilityChipTrio(abilities: (a1, a2, a3)))
                 }
             }

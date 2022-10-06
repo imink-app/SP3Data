@@ -2,11 +2,11 @@ import Foundation
 
 public extension Brand {
     
-    var usualGearSkill: AbilityChip? {
+    var usualGearSkill: Ability? {
         _BrandTraitsInfo.shared.traits[self]?.usualGearSkill
     }
     
-    var unusualGearSkill: AbilityChip? {
+    var unusualGearSkill: Ability? {
         _BrandTraitsInfo.shared.traits[self]?.unusualGearSkill
     }
 }
@@ -29,8 +29,8 @@ internal struct _BrandTraitsInfo: Decodable {
     }
     
     struct GearSkillTraits: Decodable {
-        let unusualGearSkill: AbilityChip?
-        let usualGearSkill: AbilityChip?
+        let unusualGearSkill: Ability?
+        let usualGearSkill: Ability?
         
         enum CodingKeys: String, CodingKey {
             case usualGearSkill = "UsualGearSkill"
@@ -40,9 +40,9 @@ internal struct _BrandTraitsInfo: Decodable {
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             let usualGearSkill = try container.decode(String.self, forKey: .usualGearSkill)
-            self.usualGearSkill = AbilityChip(usualGearSkill)
+            self.usualGearSkill = Ability(usualGearSkill)
             let unusualGearSkill = try container.decode(String.self, forKey: .unusualGearSkill)
-            self.unusualGearSkill = AbilityChip(unusualGearSkill)
+            self.unusualGearSkill = Ability(unusualGearSkill)
         }
     }
     
