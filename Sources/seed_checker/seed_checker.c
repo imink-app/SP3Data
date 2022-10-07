@@ -1,4 +1,5 @@
 #include "header.h"
+#include <math.h>
 
 #define BRAND_SKILL_WEIGHT_LOW 1
 #define BRAND_SKILL_WEIGHT_MID 2
@@ -78,34 +79,63 @@ RollingResult get_ability(AbilityRollingSeed seed, Brand brand, Ability drink) {
     return result;
 }
 
-static bool seed_match_sequence(AbilityRollingSeed seed, Brand brand, Ability const *ability_sequence, size_t ability_sequence_count) {
-    for (int i=0; i<ability_sequence_count; i++) {
-        Ability abilityToMatch = ability_sequence[i];
-        RollingResult result = get_ability(seed, brand, AbilityNone);
-        if (abilityToMatch != result.ability) {
+static bool seed_match_sequence(AbilityRollingSeed seed, Brand brand, SingleRoll const *history, size_t history_count) {
+    for (int i=0; i<history_count; i++) {
+        SingleRoll historyToMatch = history[i];
+        RollingResult result = get_ability(seed, brand, historyToMatch.drink);
+        if (historyToMatch.ability != result.ability) {
             return false;;
         }
+        seed = result.seed;
     }
     return true;
 }
 
-AbilityRollingSeed search_seed_in_range(AbilityRollingSeed seed_start, AbilityRollingSeed seed_end, Brand brand, Ability const *ability_sequence, size_t ability_sequence_count) {
+AbilityRollingSeed search_seed_in_range(AbilityRollingSeed seed_start, AbilityRollingSeed seed_end, Brand brand, SingleRoll const *history, size_t history_count) {
     for (AbilityRollingSeed seed=seed_start; seed<=seed_end; seed++) {
-        if (seed_match_sequence(seed, brand, ability_sequence, ability_sequence_count)) {
+        if (seed_match_sequence(seed, brand, history, history_count)) {
             return seed;
         }
     }
     return AbilityRollingSeedInvalid;
 }
 
-size_t search_seed_in_list(AbilityRollingSeed const *seed_ptr, size_t seed_count, Brand brand, Ability const *ability_sequence, size_t ability_sequence_count) {
+size_t search_seed_in_list(AbilityRollingSeed const *seed_ptr, size_t seed_count, Brand brand, SingleRoll const *history, size_t history_count) {
     for (int i=0; i<seed_count; i++) {
         AbilityRollingSeed seed = seed_ptr[seed_count];
-        if (seed_match_sequence(seed, brand, ability_sequence, ability_sequence_count)) {
+        if (seed_match_sequence(seed, brand, history, history_count)) {
             return i;
         }
     }
     return -1;
+}
+
+void search_seed(Brand brand, SingleRoll const *history, size_t history_count, AbilityRollingSeed start, AbilityRollingSeed *result, size_t *result_count, void (*reporting_progress)(double, void const *), void *reporting_progress_context) {
+    double fstride = pow(AbilitySmallAbilityCount, history_count);
+    double estimated_result_count = (double)UINT32_MAX / fstride;
+    double estimated_max_seed = UINT32_MAX;
+//    if (*result_count < estimated_result_count) {
+//        estimated_max_seed /= estimated_result_count;
+//        estimated_max_seed *= *result_count;
+//    }
+    int stride = estimated_max_seed / 100;
+    int result_idx = 0;
+    for (AbilityRollingSeed seed=1; seed!=0; seed++) {
+        if (seed_match_sequence(seed, brand, history, history_count)) {
+            result[result_idx] = seed;
+            result_idx ++;
+            if (result_idx >= *result_count) {
+                return;
+            }
+        }
+        if (reporting_progress && (seed % stride == 0)) {
+            double progress = (double)(seed / stride) / 100.0;
+            if (progress < 1) {
+                reporting_progress(progress, reporting_progress_context);
+            }
+        }
+    }
+    *result_count = result_idx;
 }
 
 __attribute__((constructor)) void fill_table() {
