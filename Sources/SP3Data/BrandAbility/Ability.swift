@@ -3,25 +3,25 @@ import seed_checker
 
 public typealias Ability = seed_checker.Ability
 
-public extension Ability {
+extension Ability: SP3Localizable, SP3ImageGetting, CaseIterable {
     
-    var localizedName: String? {
+    public var localizedName: String? {
         let key = "CommonMsg/Gear/GearPowerName/" + description
         let value = Bundle.module.localizedString(forKey: key, value: nil, table: "Extracted")
         return value == key ? nil : value
     }
     
-    var imageURL: URL? {
+    public func imageURL(style: SP3ImageStyle) -> URL? {
+        guard style == .default else { return nil }
         return SP3Resources.extractedImageDir
             .appendingPathComponent("skill/\(description).png", isDirectory: false)
             .nilIfUnreachable()
     }
-}
-
-extension Ability: CaseIterable {
     
-    public static let smallAbilities: [Ability] = (0..<Ability.count.rawValue).map { Ability(rawValue: $0)! }
-    public static let allCases: [Ability] = (0..<Ability.smallAbilityCount.rawValue).map { Ability(rawValue: $0)! }
+    public static let supportedImageStyles: [SP3ImageStyle] = [.default]
+    
+    public static let smallAbilities: [Ability] = (0..<Ability.smallAbilityCount.rawValue).map { Ability(rawValue: $0)! }
+    public static let allCases: [Ability] = (0..<Ability.count.rawValue).map { Ability(rawValue: $0)! }
 }
 
 extension Ability: LosslessStringConvertible {

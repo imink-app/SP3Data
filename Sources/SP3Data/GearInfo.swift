@@ -2,7 +2,7 @@ import Foundation
 
 extension GearInfo: SP3Localizable, SP3ImageGetting, CaseIterable {
     
-    public enum GearType {
+    public enum GearType: CaseIterable {
         case head
         case clothes
         case shoes
