@@ -196,7 +196,7 @@
 "CommonMsg/Byname/BynameAdjective/0214" = "обработанн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0215" = "залежал[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0216" = "солен[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
-"CommonMsg/Byname/BynameAdjective/0217" = "обреченн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
+"CommonMsg/Byname/BynameAdjective/0217" = "избранн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00] судьбой";
 "CommonMsg/Byname/BynameAdjective/0219" = "наивн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0220" = "стерт[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0221" = "рок-н-ролльн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
@@ -328,12 +328,12 @@
 "CommonMsg/Byname/BynameAdjective/0368" = "упорн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0369" = "обжигающ[group=00c9 type=0005 params=04 00 38 04 39 04 04 00 30 04 4f 04 04 00 35 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0370" = "дневн[group=00c9 type=0005 params=04 00 3e 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
-"CommonMsg/Byname/BynameAdjective/0371" = "мясн[group=00c9 type=0005 params=04 00 3e 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
+"CommonMsg/Byname/BynameAdjective/0371" = "крепк[group=00c9 type=0005 params=04 00 38 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0372" = "покрыт[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00] тайной";
 "CommonMsg/Byname/BynameAdjective/0374" = "невозмутим[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0375" = "сообразительн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0376" = "пролетающ[group=00c9 type=0005 params=04 00 38 04 39 04 04 00 30 04 4f 04 04 00 35 04 35 04 00 00]";
-"CommonMsg/Byname/BynameAdjective/0377" = "разряженн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
+"CommonMsg/Byname/BynameAdjective/0377" = "выжат[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0378" = "перевоплотивш[group=00c9 type=0005 params=08 00 38 04 39 04 41 04 4f 04 08 00 30 04 4f 04 41 04 4f 04 08 00 35 04 35 04 41 04 4f 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0379" = "вялен[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0381" = "известн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00] как";
@@ -415,7 +415,7 @@
 "CommonMsg/Byname/BynameAdjective/0477" = "просветленн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0480" = "отчужденн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0484" = "закаленн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
-"CommonMsg/Byname/BynameAdjective/0485" = "вычурн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
+"CommonMsg/Byname/BynameAdjective/0485" = "артистичн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0486" = "летящ[group=00c9 type=0005 params=04 00 38 04 39 04 04 00 30 04 4f 04 04 00 35 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0488" = "несгибаем[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0490" = "благоприятн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
@@ -573,7 +573,7 @@
 "CommonMsg/Byname/BynameAdjective/0686" = "лучш[group=00c9 type=0005 params=04 00 38 04 39 04 04 00 30 04 4f 04 04 00 35 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0687" = "бродяч[group=00c9 type=0005 params=04 00 38 04 39 04 04 00 30 04 4f 04 04 00 35 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0688" = "диджейн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
-"CommonMsg/Byname/BynameAdjective/0689" = "опустошенн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
+"CommonMsg/Byname/BynameAdjective/0689" = "пустошн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0690" = "заснеженн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0691" = "приморск[group=00c9 type=0005 params=04 00 38 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
 "CommonMsg/Byname/BynameAdjective/0692" = "поднебесн[group=00c9 type=0005 params=04 00 4b 04 39 04 04 00 30 04 4f 04 04 00 3e 04 35 04 00 00]";
@@ -1008,7 +1008,7 @@
 "CommonMsg/Byname/BynameSubject/0354_0" = "[group=00c9 type=0000 params=01 ff ff 00]осьморянин";
 "CommonMsg/Byname/BynameSubject/0354_1" = "[group=00c9 type=0000 params=02 ff ff 00]осьморянка";
 "CommonMsg/Byname/BynameSubject/0355_0" = "[group=00c9 type=0000 params=01 ff ff 00]медведь";
-"CommonMsg/Byname/BynameSubject/0355_1" = "[group=0001 type=0002 params=]";
+"CommonMsg/Byname/BynameSubject/0355_1" = "[group=00c9 type=0000 params=02 ff ff 00]медведица";
 "CommonMsg/Byname/BynameSubject/0356_0" = "[group=00c9 type=0000 params=02 ff ff 00]медуза";
 "CommonMsg/Byname/BynameSubject/0356_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0357_0" = "[group=00c9 type=0000 params=01 ff ff 00]человек";
@@ -1070,7 +1070,7 @@
 "CommonMsg/Byname/BynameSubject/0386_0" = "[group=00c9 type=0000 params=02 ff ff 00]рыба";
 "CommonMsg/Byname/BynameSubject/0386_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0387_0" = "[group=00c9 type=0000 params=01 ff ff 00]демиург разрушения";
-"CommonMsg/Byname/BynameSubject/0387_1" = "[group=00c9 type=0000 params=02 ff ff 00]демиург разрушения";
+"CommonMsg/Byname/BynameSubject/0387_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0388_0" = "[group=00c9 type=0000 params=01 ff ff 00]пес";
 "CommonMsg/Byname/BynameSubject/0388_1" = "[group=00c9 type=0000 params=02 ff ff 00]собака";
 "CommonMsg/Byname/BynameSubject/0389_0" = "[group=00c9 type=0000 params=01 ff ff 00]дракон";
@@ -1135,8 +1135,8 @@
 "CommonMsg/Byname/BynameSubject/0420_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0421_0" = "[group=00c9 type=0000 params=01 ff ff 00]писатель";
 "CommonMsg/Byname/BynameSubject/0421_1" = "[group=00c9 type=0000 params=02 ff ff 00]писательница";
-"CommonMsg/Byname/BynameSubject/0422_0" = "[group=0001 type=0002 params=]";
-"CommonMsg/Byname/BynameSubject/0422_1" = "[group=00c9 type=0000 params=02 ff ff 00]руководитель";
+"CommonMsg/Byname/BynameSubject/0422_0" = "[group=00c9 type=0000 params=01 ff ff 00]руководитель";
+"CommonMsg/Byname/BynameSubject/0422_1" = "[group=00c9 type=0000 params=02 ff ff 00]руководительница";
 "CommonMsg/Byname/BynameSubject/0423_0" = "[group=00c9 type=0000 params=01 ff ff 00]астронавт";
 "CommonMsg/Byname/BynameSubject/0423_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0424_0" = "[group=00c9 type=0000 params=01 ff ff 00]певец";
@@ -1156,7 +1156,7 @@
 "CommonMsg/Byname/BynameSubject/0432_0" = "[group=00c9 type=0000 params=01 ff ff 00]помощник менеджера";
 "CommonMsg/Byname/BynameSubject/0432_1" = "[group=00c9 type=0000 params=02 ff ff 00]помощница менеджера";
 "CommonMsg/Byname/BynameSubject/0433_0" = "[group=00c9 type=0000 params=01 ff ff 00]охранник";
-"CommonMsg/Byname/BynameSubject/0433_1" = "[group=0001 type=0002 params=]";
+"CommonMsg/Byname/BynameSubject/0433_1" = "[group=00c9 type=0000 params=02 ff ff 00]охранница";
 "CommonMsg/Byname/BynameSubject/0434_0" = "[group=00c9 type=0000 params=01 ff ff 00]исследователь";
 "CommonMsg/Byname/BynameSubject/0434_1" = "[group=00c9 type=0000 params=02 ff ff 00]исследовательница";
 "CommonMsg/Byname/BynameSubject/0437_0" = "[group=00c9 type=0000 params=01 ff ff 00]автор";
@@ -1246,7 +1246,7 @@
 "CommonMsg/Byname/BynameSubject/0482_0" = "[group=00c9 type=0000 params=03 ff ff 00]суши";
 "CommonMsg/Byname/BynameSubject/0482_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0483_0" = "[group=00c9 type=0000 params=01 ff ff 00]абонент";
-"CommonMsg/Byname/BynameSubject/0483_1" = "[group=0001 type=0002 params=]";
+"CommonMsg/Byname/BynameSubject/0483_1" = "[group=00c9 type=0000 params=02 ff ff 00]абонентка";
 "CommonMsg/Byname/BynameSubject/0484_0" = "[group=00c9 type=0000 params=01 ff ff 00]морепродукт";
 "CommonMsg/Byname/BynameSubject/0484_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0485_0" = "[group=00c9 type=0000 params=01 ff ff 00]сурими";
@@ -1267,7 +1267,7 @@
 "CommonMsg/Byname/BynameSubject/0493_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0494_0" = "[group=00c9 type=0000 params=01 ff ff 00]щит";
 "CommonMsg/Byname/BynameSubject/0494_1" = "[group=0001 type=0002 params=]";
-"CommonMsg/Byname/BynameSubject/0495_0" = "[group=00c9 type=0000 params=01 ff ff 00]ведущий";
+"CommonMsg/Byname/BynameSubject/0495_0" = "[group=00c9 type=0000 params=01 ff ff 00]первопроходец";
 "CommonMsg/Byname/BynameSubject/0495_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0496_0" = "[group=00c9 type=0000 params=01 ff ff 00]зритель";
 "CommonMsg/Byname/BynameSubject/0496_1" = "[group=00c9 type=0000 params=02 ff ff 00]зрительница";
@@ -1338,7 +1338,7 @@
 "CommonMsg/Byname/BynameSubject/0532_0" = "[group=00c9 type=0000 params=03 ff ff 00]карпаччо";
 "CommonMsg/Byname/BynameSubject/0532_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0533_0" = "[group=00c9 type=0000 params=01 ff ff 00]клавишник";
-"CommonMsg/Byname/BynameSubject/0533_1" = "[group=0001 type=0002 params=]";
+"CommonMsg/Byname/BynameSubject/0533_1" = "[group=00c9 type=0000 params=02 ff ff 00]клавишница";
 "CommonMsg/Byname/BynameSubject/0534_0" = "[group=00c9 type=0000 params=01 ff ff 00]гитарист";
 "CommonMsg/Byname/BynameSubject/0534_1" = "[group=00c9 type=0000 params=02 ff ff 00]гитаристка";
 "CommonMsg/Byname/BynameSubject/0535_0" = "[group=00c9 type=0000 params=01 ff ff 00]турист";
@@ -1445,8 +1445,8 @@
 "CommonMsg/Byname/BynameSubject/0590_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0591_0" = "[group=00c9 type=0000 params=02 ff ff 00]суперзвезда";
 "CommonMsg/Byname/BynameSubject/0591_1" = "[group=0001 type=0002 params=]";
-"CommonMsg/Byname/BynameSubject/0592_0" = "[group=00c9 type=0000 params=01 ff ff 00]маньяк";
-"CommonMsg/Byname/BynameSubject/0592_1" = "[group=00c9 type=0000 params=02 ff ff 00]маньячка";
+"CommonMsg/Byname/BynameSubject/0592_0" = "[group=00c9 type=0000 params=01 ff ff 00]мегафанат";
+"CommonMsg/Byname/BynameSubject/0592_1" = "[group=00c9 type=0000 params=02 ff ff 00]мегафанатка";
 "CommonMsg/Byname/BynameSubject/0593_0" = "[group=00c9 type=0000 params=02 ff ff 00]тайна";
 "CommonMsg/Byname/BynameSubject/0593_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0595_0" = "[group=00c9 type=0000 params=01 ff ff 00]очкарик";
@@ -1477,8 +1477,8 @@
 "CommonMsg/Byname/BynameSubject/0608_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0610_0" = "[group=00c9 type=0000 params=01 ff ff 00]монарх";
 "CommonMsg/Byname/BynameSubject/0610_1" = "[group=00c9 type=0000 params=02 ff ff 00]монархиня";
-"CommonMsg/Byname/BynameSubject/0611_0" = "[group=00c9 type=0000 params=01 ff ff 00]любитель горячих источников";
-"CommonMsg/Byname/BynameSubject/0611_1" = "[group=0001 type=0002 params=]";
+"CommonMsg/Byname/BynameSubject/0611_0" = "[group=00c9 type=0000 params=01 ff ff 00]фанат горячих источников";
+"CommonMsg/Byname/BynameSubject/0611_1" = "[group=00c9 type=0000 params=02 ff ff 00]фанатка горячих источников";
 "CommonMsg/Byname/BynameSubject/0613_0" = "[group=00c9 type=0000 params=01 ff ff 00]рыболов";
 "CommonMsg/Byname/BynameSubject/0613_1" = "[group=0001 type=0002 params=]";
 "CommonMsg/Byname/BynameSubject/0614_0" = "[group=00c9 type=0000 params=02 ff ff 00]морская рыба";
@@ -1839,6 +1839,9 @@
 "CommonMsg/Gear/GearName_Clothes/AMB008" = "Балахон колдуньи А";
 "CommonMsg/Gear/GearName_Clothes/AMB009" = "Латы осьморыцаря";
 "CommonMsg/Gear/GearName_Clothes/AMB010" = "Перчатки Плавнишки";
+"CommonMsg/Gear/GearName_Clothes/AMB011" = "Плащ «Хулиган»";
+"CommonMsg/Gear/GearName_Clothes/AMB012" = "Ги с черным поясом";
+"CommonMsg/Gear/GearName_Clothes/AMB013" = "Доспехи бериксерка";
 "CommonMsg/Gear/GearName_Clothes/AMB014" = "Школьная форма Б";
 "CommonMsg/Gear/GearName_Clothes/AMB015" = "Школьная кофта Б";
 "CommonMsg/Gear/GearName_Clothes/AMB017" = "Балахон колдуньи Б";
@@ -1965,6 +1968,9 @@
 "CommonMsg/Gear/GearName_Head/AMB008" = "Шляпа колдуньи";
 "CommonMsg/Gear/GearName_Head/AMB009" = "Шлем осьморыцаря";
 "CommonMsg/Gear/GearName_Head/AMB010" = "Маска Плавнишки";
+"CommonMsg/Gear/GearName_Head/AMB011" = "Рыбочистка";
+"CommonMsg/Gear/GearName_Head/AMB012" = "Повязка сушиста";
+"CommonMsg/Gear/GearName_Head/AMB013" = "Шлем бериксерка";
 "CommonMsg/Gear/GearName_Head/AMB016" = "Маска ниндзялинга М-1";
 "CommonMsg/Gear/GearName_Head/AMB017" = "Жем-корона (макси)";
 "CommonMsg/Gear/GearName_Head/CAP000" = "Бейсболка БК «Ежи»";
@@ -2059,6 +2065,9 @@
 "CommonMsg/Gear/GearName_Shoes/AMB008" = "Сапоги колдуньи";
 "CommonMsg/Gear/GearName_Shoes/AMB009" = "Сапоги осьморыцаря";
 "CommonMsg/Gear/GearName_Shoes/AMB010" = "Башмаки Плавнишки";
+"CommonMsg/Gear/GearName_Shoes/AMB011" = "Веревочные сандалии";
+"CommonMsg/Gear/GearName_Shoes/AMB012" = "Фиксаторы лодыжек";
+"CommonMsg/Gear/GearName_Shoes/AMB013" = "Сапоги бериксерка";
 "CommonMsg/Gear/GearName_Shoes/AMB014" = "Простые школьные ботинки";
 "CommonMsg/Gear/GearName_Shoes/AMB015" = "Простые лоферы с бахромой";
 "CommonMsg/Gear/GearName_Shoes/BOT000" = "Мотоботинки";
@@ -2191,6 +2200,7 @@
 "CommonMsg/Glossary/Aori" = "Кэлли";
 "CommonMsg/Glossary/Atarime" = "Кальмостар";
 "CommonMsg/Glossary/AtarimeHimono" = "Кальмостар";
+"CommonMsg/Glossary/Band01" = "Squid Squad";
 "CommonMsg/Glossary/BattleMemory" = "повтор боя";
 "CommonMsg/Glossary/Byname" = "титул";
 "CommonMsg/Glossary/CardPack" = "колода карт";
@@ -2219,6 +2229,8 @@
 "CommonMsg/Glossary/IdolA" = "Кулла";
 "CommonMsg/Glossary/IdolB" = "Мурия";
 "CommonMsg/Glossary/IdolC" = "Биг Ман";
+"CommonMsg/Glossary/IdolGroup_01" = "Squid Sisters";
+"CommonMsg/Glossary/IdolGroup_02" = "Off the Hook";
 "CommonMsg/Glossary/IdolGroup_03" = "Deep Cut";
 "CommonMsg/Glossary/Iida" = "Мариша";
 "CommonMsg/Glossary/Inkling" = "инклинг";
@@ -2293,6 +2305,7 @@
 "CommonMsg/Glossary/NamePlateBg" = "баннер";
 "CommonMsg/Glossary/Nigou" = "агент 002";
 "CommonMsg/Glossary/Octoling" = "осьмолинг";
+"CommonMsg/Glossary/PlatoonNew" = "Новый отряд специального назначения «Спрут»";
 "CommonMsg/Glossary/PlayerAvatar" = "игроки-призраки";
 "CommonMsg/Glossary/RealKumasan" = "Потапыч";
 "CommonMsg/Glossary/RoeCannon" = "икринковая пушка";
@@ -2722,8 +2735,8 @@
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_10" = "Деко БУМ-ОД";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_11" = "Деко БУМ-ДВА";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_13" = "Деко ГОР";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "Логотип «Кальмар 3»";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "Логотип «Осьминог 3»";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "Логотип «Осьминог 3»";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "Логотип «Кальмар 3»";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_02" = "Логотип «Суси-Весла»";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_03" = "Логотип «Грильяни»";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_04" = "Логотип «Кальмар 2-СИ»";
@@ -3772,7 +3785,7 @@
 "CommonMsg/UnitName/CoopGradeExp" = "[group=0002 type=0000 params=00 03 00 00]/[group=0002 type=0000 params=01 03 00 00]";
 "CommonMsg/UnitName/CoopRewardPoint" = "[group=0002 type=0000 params=00 05 00 00] очк.";
 "CommonMsg/UnitName/Date01" = "[group=0002 type=0000 params=02 02 01 00].[group=0002 type=0000 params=01 02 01 00].[group=0002 type=0000 params=00 04 01 00]";
-"CommonMsg/UnitName/DateTime00" = "[group=0002 type=0000 params=00 02 01 00].[group=0002 type=0000 params=01 02 01 00]  [group=0002 type=0000 params=02 02 01 00]:[group=0002 type=0000 params=03 02 01 00]";
+"CommonMsg/UnitName/DateTime00" = "[group=0002 type=0000 params=01 02 01 00].[group=0002 type=0000 params=00 02 01 00]  [group=0002 type=0000 params=02 02 01 00]:[group=0002 type=0000 params=03 02 01 00]";
 "CommonMsg/UnitName/DateTime01" = "[group=0002 type=0000 params=02 02 01 00].[group=0002 type=0000 params=01 02 01 00].[group=0002 type=0000 params=00 04 01 00] [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
 "CommonMsg/UnitName/DateTime02" = "[group=0002 type=0000 params=01 02 01 00].[group=0002 type=0000 params=00 02 01 00] ([group=0004 type=0010 params=02 00 00 00]) [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
 "CommonMsg/UnitName/FestPowCount" = "[group=0002 type=0000 params=00 01 00 00]/[group=0002 type=0000 params=01 01 00 00]";
@@ -4551,10 +4564,6 @@
 "LayoutMsg/Lobby_MenuMode_00/227" = "Сначала поучаствуй\nв Сплатфест-боях!";
 "LayoutMsg/Lobby_MenuMode_00/228" = "Сначала поучаствуй\nв Сплатфест-боях!";
 "LayoutMsg/Lobby_MenuMode_00/229" = "Сначала поучаствуй\nв Сплатфест-боях!";
-"LayoutMsg/Lobby_MenuMode_00/300" = "Тухлячок";
-"LayoutMsg/Lobby_MenuMode_00/301" = "Ни рыба ни мясо";
-"LayoutMsg/Lobby_MenuMode_00/302" = "Нормалек";
-"LayoutMsg/Lobby_MenuMode_00/303" = "СВЕЖАЧОК!";
 "LayoutMsg/Lobby_MenuMode_00/400" = "Успех!";
 "LayoutMsg/Lobby_MenuMode_00/401" = "Провал";
 "LayoutMsg/Lobby_MenuMode_00/501" = "Невозможно выбрать, так как твоя команда\nпока занимает первое место. Однако,\nтрехцветный бой за район может включиться\nв открытых Сплатфест-боях автоматически.";

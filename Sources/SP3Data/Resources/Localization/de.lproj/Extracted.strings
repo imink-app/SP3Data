@@ -1839,6 +1839,9 @@
 "CommonMsg/Gear/GearName_Clothes/AMB008" = "Zaubergewand A";
 "CommonMsg/Gear/GearName_Clothes/AMB009" = "Oktoritter-Rüstung";
 "CommonMsg/Gear/GearName_Clothes/AMB010" = "Flosso-Handschuhe";
+"CommonMsg/Gear/GearName_Clothes/AMB011" = "Rowdy-Mantel";
+"CommonMsg/Gear/GearName_Clothes/AMB012" = "Schwarzgurt-Gi";
+"CommonMsg/Gear/GearName_Clothes/AMB013" = "Randale-Rüstung";
 "CommonMsg/Gear/GearName_Clothes/AMB014" = "Schuluniform B";
 "CommonMsg/Gear/GearName_Clothes/AMB015" = "Schul-Cardigan B";
 "CommonMsg/Gear/GearName_Clothes/AMB017" = "Zaubergewand B";
@@ -1852,7 +1855,7 @@
 "CommonMsg/Gear/GearName_Clothes/HAP001" = "Splatfest-Shirt";
 "CommonMsg/Gear/GearName_Clothes/HAP003" = "Splatfest-Shirt";
 "CommonMsg/Gear/GearName_Clothes/JKT000" = "Grüner Anorak";
-"CommonMsg/Gear/GearName_Clothes/JKT001" = "Takoroka-Retropulli";
+"CommonMsg/Gear/GearName_Clothes/JKT001" = "Kalamati-Retropulli";
 "CommonMsg/Gear/GearName_Clothes/JKT006" = "Schwarze Bikerjacke";
 "CommonMsg/Gear/GearName_Clothes/JKT014" = "Katzen-Baseballjacke";
 "CommonMsg/Gear/GearName_Clothes/JKT015" = "Elektrowels-Baseballjacke";
@@ -1965,6 +1968,9 @@
 "CommonMsg/Gear/GearName_Head/AMB008" = "Zauberhut";
 "CommonMsg/Gear/GearName_Head/AMB009" = "Oktoritter-Helm";
 "CommonMsg/Gear/GearName_Head/AMB010" = "Flosso-Kopf";
+"CommonMsg/Gear/GearName_Head/AMB011" = "Grätenstocher";
+"CommonMsg/Gear/GearName_Head/AMB012" = "Sushikoch-Stirnband";
+"CommonMsg/Gear/GearName_Head/AMB013" = "Randale-Helm";
 "CommonMsg/Gear/GearName_Head/AMB016" = "Ninja-Maske I";
 "CommonMsg/Gear/GearName_Head/AMB017" = "Perla-Krone L";
 "CommonMsg/Gear/GearName_Head/CAP000" = "Urchins-Kappe";
@@ -2059,6 +2065,9 @@
 "CommonMsg/Gear/GearName_Shoes/AMB008" = "Zauberstiefel";
 "CommonMsg/Gear/GearName_Shoes/AMB009" = "Oktoritter-Stiefel";
 "CommonMsg/Gear/GearName_Shoes/AMB010" = "Flosso-Schuhe";
+"CommonMsg/Gear/GearName_Shoes/AMB011" = "Seilsandalen";
+"CommonMsg/Gear/GearName_Shoes/AMB012" = "Knöchelschoner";
+"CommonMsg/Gear/GearName_Shoes/AMB013" = "Randale-Stiefel";
 "CommonMsg/Gear/GearName_Shoes/AMB014" = "Basic-Schuluniform-Schuhe";
 "CommonMsg/Gear/GearName_Shoes/AMB015" = "Basic-Loafer";
 "CommonMsg/Gear/GearName_Shoes/BOT000" = "Biker-Stiefel";
@@ -2191,6 +2200,7 @@
 "CommonMsg/Glossary/Aori" = "Aioli";
 "CommonMsg/Glossary/Atarime" = "Kuttelfisch";
 "CommonMsg/Glossary/AtarimeHimono" = "Kuttelfisch";
+"CommonMsg/Glossary/Band01" = "Squid Squad";
 "CommonMsg/Glossary/BattleMemory" = "Kampferinnerung";
 "CommonMsg/Glossary/Byname" = "Titel";
 "CommonMsg/Glossary/CardPack" = "Kartenpäckchen";
@@ -2219,6 +2229,8 @@
 "CommonMsg/Glossary/IdolA" = "Mako";
 "CommonMsg/Glossary/IdolB" = "Muri";
 "CommonMsg/Glossary/IdolC" = "Mantaro";
+"CommonMsg/Glossary/IdolGroup_01" = "Sea Sirens";
+"CommonMsg/Glossary/IdolGroup_02" = "TentaCool";
 "CommonMsg/Glossary/IdolGroup_03" = "Surimi Syndicate";
 "CommonMsg/Glossary/Iida" = "Marina";
 "CommonMsg/Glossary/Inkling" = "Inkling";
@@ -2293,6 +2305,7 @@
 "CommonMsg/Glossary/NamePlateBg" = "Banner";
 "CommonMsg/Glossary/Nigou" = "Nr. 2";
 "CommonMsg/Glossary/Octoling" = "Oktoling";
+"CommonMsg/Glossary/PlatoonNew" = "Neue Aquamarine";
 "CommonMsg/Glossary/PlayerAvatar" = "Geister";
 "CommonMsg/Glossary/RealKumasan" = "Herr Bär";
 "CommonMsg/Glossary/RoeCannon" = "Eierkanone";
@@ -2722,8 +2735,8 @@
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_10" = "Deko-Sticker „XPL-1“";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_11" = "Deko-Sticker „XPL-2“";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_13" = "Deko-Sticker „BRGBRG“";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "Tintenfisch-3-Logo";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "Oktopus-3-Logo";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "Oktopus-3-Logo";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "Tintenfisch-3-Logo";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_02" = "Barazushi-Logo";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_03" = "Shichiryn-Logo";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_04" = "TNT-2B-Logo";
@@ -3118,7 +3131,7 @@
 "CommonMsg/Manual/ManualFes/Fes_FesMatch_Manual02" = "Es gibt zwei Arten von Splatfest-Kämpfen:\n[color=0001]Offen[color=ffff] und [color=0001]Profi[color=ffff]! [color=0001]Offene Kämpfe[color=ffff] sind für\nSolospieler gedacht, die einen schnellen Kampf\nspielen wollen, oder Gruppen aus 2-4 Spielern,\ndie demselben Team beigetreten sind.\n\nPunkte für das Färben des Bodens und\nSiegesboni werden als [color=0001]Beitrag[color=ffff] gewertet.\n\nUnd wenn du bei deinem Team bleibst und\nihr mehrmals hintereinander Kämpfe gewinnt,\ntretet ihr möglicherweise gegen Teams mit\neiner ähnlichen Siegesserie an!";
 "CommonMsg/Manual/ManualFes/Fes_FesMatch_Manual03" = "[color=0001]Profi [color=ffff]ist für Solospieler, die an ihre Grenzen\ngehen wollen. Hier werden deine Fähigkeiten\nals [color=0001]Splatfest-Power [color=ffff]angezeigt, und die besten\nerreichen einen der heißbegehrten Plätze in\nden [color=0001]Splatfest Top 100[color=ffff]!\n\nHier zählen Siege als [color=0001]Beitrag[color=ffff], und je höher die\nSplatfest-Power deiner Gegner, desto höher\nfällt er aus!";
 "CommonMsg/Manual/ManualFes/Fes_FesMatch_Title" = "Splatfest-Grundlagen";
-"CommonMsg/Manual/ManualFes/Fes_MainSubFes_Manual00" = "Splatfeste bestehen aus zwei Teilen:\nDer [color=0001]Aufwärmphase[color=ffff], in der sich Spieler für eines der möglichen\nTeams entscheiden, und dem [color=0001]Haupt-Event[color=ffff], in dem die Teams\ndann direkt gegeneinander antreten.\n\nGeh einfach zum [color=0001]Splatfest-Wahlstand[color=ffff] auf dem Platz und [color=0001]wähle\nein Team[color=ffff], um an einem Splatfest teilzunehmen. Du erhältst dann\nleihweise ein [color=0001]Splatfest-Shirt[color=ffff], um dein Team gebührend zu\nrepräsentieren!\n\nWenn sich die Stufe deines Katalogs während eines Splatfestes\nerhöht, erhältst du ein [color=0001]Tritonshorn[color=ffff], also lege Schichten ein\nund kämpfe, um Katalog-Punkte zu erhalten.\n(Hinweis: Den Katalog erhältst du ab Stufe 4 im Hotlantis.)";
+"CommonMsg/Manual/ManualFes/Fes_MainSubFes_Manual00" = "Splatfeste bestehen aus zwei Teilen:\nDer [color=0001]Aufwärmphase[color=ffff], in der sich Spieler für eines der möglichen\nTeams entscheiden, und dem [color=0001]Haupt-Event[color=ffff], in dem die Teams\ndann direkt gegeneinander antreten.\n\nGeh einfach zum [color=0001]Splatfest-Wahlstand[color=ffff] auf dem Platz und [color=0001]wähle\nein Team[color=ffff], um an einem Splatfest teilzunehmen. Du erhältst dann\nleihweise ein [color=0001]Splatfest-Shirt[color=ffff], um dein Team gebührend zu\nrepräsentieren!\n\nWenn sich die Stufe deines Katalogs während eines Splatfestes\nerhöht, erhältst du ein [color=0001]Tritonshorn[color=ffff], also lege Schichten ein\nund kämpfe, um Katalogpunkte zu erhalten.\n(Hinweis: Den Katalog erhältst du ab Stufe 4 im Hotlantis.)";
 "CommonMsg/Manual/ManualFes/Fes_MainSubFes_Manual01" = "Wenn du in der Aufwärmphase Tritonshörner erhältst, hilfst du\ndamit deinem Team! Außerdem kannst du sie am [color=0001]Kapselautomaten[color=ffff]\nin der Lobby verwenden. Ganz wichtig: Verdiente Tritonshörner\nwerden immer für dein Team gezählt – egal, ob du sie am\nAutomaten ausgibst oder nicht!\n\nBei deinem Splatfest-Shirt kannst du die [color=0001]Effekte ändern[color=ffff] oder\nseine [color=0001]Felder leeren[color=ffff] lassen, und das zum Sonderpreis. Es lohnt\nsich also, es zum Haupt-Event auf die höchste Stufe zu bringen!\n\nAber sei schnell, denn Splatfest-Shirt und Tritonshörner\nmusst du nach dem Splatfest beide wieder zurückgeben!";
 "CommonMsg/Manual/ManualFes/Fes_MainSubFes_Manual02" = "Beim Haupt-Event geht es ganz um Splatfest-Kämpfe. Wenn du\ngut kämpfst, steigt der [color=0001]Beitrag[color=ffff], den du für dein Team leistest!\n\nManchmal nimmst du auch an einem [color=0001]×10-Kampf[color=ffff] teil. Wenn ihr\ndiesen gewinnt, erhältst du den zehnfachen Beitrag sowie eine\n[color=0001]Festmuschel[color=ffff]. Festmuscheln erhöhen die Wahrscheinlichkeit\nauf einen [color=0001]×100-Kampf[color=ffff] oder gar einen [color=0001]×333-Kampf[color=ffff]!";
 "CommonMsg/Manual/ManualFes/Fes_MainSubFes_Manual03" = "Wenn das Haupt-Event zur Hälfte vorbei ist, wird der\n[color=0001]Halbzeit-Bericht[color=ffff] veröffentlicht. Dort wird verkündet, welches\nTeam in Führung liegt, und die [color=0001]Dreifarb-Angriffe[color=ffff] beginnen!\nDabei können sich die zurückliegenden Teams in der Lobby unter\n„Dreifarb-Angriff“ gegen das führende Team verbünden.\n\nWeitere Infos zu Dreifarb-Angriffen findest du unter\n„Dreifarb-Angriffe“ und „Splatfest-Grundlagen“.\n\nUnd noch etwas: Während des Haupt-Events erhältst du\nmehr Katalogpunkte!";
@@ -3667,7 +3680,7 @@
 "CommonMsg/Narration/Narration_Tips/Tips_81_Trial" = "Zerstöre die Ziele mit einem [color=0001]Pinsel[color=ffff]! Greife an mit [group=0003 type=000c params=29 5c 0f 40 05 00 00 00] oder\nhalte [group=0003 type=000c params=29 5c 0f 40 05 00 00 00] und bewege [group=0003 type=0007 params=5c 8f c2 3f 05 00 00 00], um malend zu sprinten!";
 "CommonMsg/Narration/Narration_Tips/Tips_82" = "Miauiau. ([color=0001]Splatling[color=ffff]-Waffen feuern einen wahren\nTintenregen nach vorne, und zwar blitzschnell.)[page break](Wie schnell und wie lange es prasselt,\nhängt von der Anlaufzeit ab.)[page break](Halte zum Anlaufen [group=0003 type=000c params=00 00 80 3f 00 00 00 00] und achte auf dein\nFadenkreuz. Bis zu zwei Ladungen sind möglich!)[page break](Die erste Ladung verlängert die Schussweite.\nDie zweite bestimmt, wie lang die Salve dauert.)[page break](Versuch's mal! Halte [group=0003 type=000c params=00 00 80 3f 00 00 00 00], bis sich die Anzeige\nzweimal gefüllt hat, und dann Feuer frei!)";
 "CommonMsg/Narration/Narration_Tips/Tips_82_Trial" = "Zerstöre die Ziele mit einer [color=0001]Splatling[color=ffff]! Halte [group=0003 type=000c params=29 5c 0f 40 05 00 00 00] und lass dann\nlos zum Feuern – je länger, desto mehr Klecksdauer und Reichweite!";
-"CommonMsg/Narration/Narration_Tips/Tips_83" = "Mrrau. (Mit [color=0001]Sprenklern [color=ffff]wie den Klecks-Dopplern\nhast du in jeder Hand etwas zum Klecksen!)[page break](Und nicht nur das. Sprenkler lassen dich sogar\nblitzschnelle [color=0001]Ausweichmanöver [color=ffff]ausführen.)[page break](Feuere mit [group=0003 type=000c params=00 00 80 3f 00 00 00 00], bewege [group=0003 type=0007 params=cd cc 4c 3f 00 00 00 00] und drücke [group=0003 type=0001 params=00 00 80 3f 00 00 00 00],\nschon entgehst du allerlei brenzligen Lagen.)[page break](Nach dem Ausweichen musst du dich kurz\nerholen, dafür zielst du in dieser Zeit genauer.)[page break](Ach ja, und das Manöver verbraucht recht viel\nTinte. Also immer auf deinen Tank achten, ja?)[page break](Dann mal los! Schnapp dir ein Paar Sprenkler\nund roll dich hinein ins Vergnügen!)";
+"CommonMsg/Narration/Narration_Tips/Tips_83" = "Mrrau. (Mit den Klecks-Dopplern hast du in jeder\nHand etwas zum Klecksen!)[page break](Und nicht nur das. Doppler lassen dich sogar\nblitzschnelle [color=0001]Ausweichmanöver [color=ffff]ausführen.)[page break](Feuere mit [group=0003 type=000c params=00 00 80 3f 00 00 00 00], bewege [group=0003 type=0007 params=cd cc 4c 3f 00 00 00 00] und drücke [group=0003 type=0001 params=00 00 80 3f 00 00 00 00],\nschon entgehst du allerlei brenzligen Lagen.)[page break](Nach dem Ausweichen musst du dich kurz\nerholen, dafür zielst du in dieser Zeit genauer.)[page break](Ach ja, und das Manöver verbraucht recht viel\nTinte. Also immer auf deinen Tank achten, ja?)[page break](Dann mal los! Schnapp dir ein Paar Doppler\nund roll dich hinein ins Vergnügen!)";
 "CommonMsg/Narration/Narration_Tips/Tips_83_Trial" = "Zerstöre die Ziele mit [color=0001]Dopplern[color=ffff]! Mit [group=0003 type=000c params=29 5c 0f 40 05 00 00 00] schießt du. Dabei kannst\ndu [group=0003 type=0007 params=5c 8f c2 3f 05 00 00 00] bewegen und [group=0003 type=0001 params=29 5c 0f 40 05 00 00 00] drücken, um [color=0001]auszuweichen[color=ffff]!";
 "CommonMsg/Narration/Narration_Tips/Tips_84" = "Miau... ([color=0001]Schwapper [color=ffff]wie der, nun ja, Schwapper\nkübeln massenweise Tinte über Gegner aus.)[page break](Bei den meisten Modellen bestimmst du mit\nControllerbewegungen die Schwapprichtung.)[page break](Den Controller richtig zu schwingen ist knifflig,\ndoch fleißiges Üben macht sich bezahlt.)[page break](Und beim Thema Üben: Wie wär's, du versuchst\ndich mal ein wenig im Schwapperschwingen?)";
 "CommonMsg/Narration/Narration_Tips/Tips_84_Trial" = "Zerstöre die Ziele mit einem [color=0001]Schwapper[color=ffff]! Greife mit [group=0003 type=000c params=29 5c 0f 40 05 00 00 00] an.\nNeigen des Controllers lässt dich die Schwapprichtung beeinflussen!";
@@ -4218,7 +4231,7 @@
 "CommonMsg/Weapon/WeaponTypeName/Blaster" = "Blaster";
 "CommonMsg/Weapon/WeaponTypeName/Brush" = "Pinsel";
 "CommonMsg/Weapon/WeaponTypeName/Charger" = "Konzentratoren";
-"CommonMsg/Weapon/WeaponTypeName/Maneuver" = "Sprenkler";
+"CommonMsg/Weapon/WeaponTypeName/Maneuver" = "Doppler";
 "CommonMsg/Weapon/WeaponTypeName/Roller" = "Roller";
 "CommonMsg/Weapon/WeaponTypeName/Saber" = "Splatanas";
 "CommonMsg/Weapon/WeaponTypeName/Shelter" = "Pluviatoren";
@@ -4551,10 +4564,6 @@
 "LayoutMsg/Lobby_MenuMode_00/227" = "Versuche dich\nzuerst an Standard-\nSplatfest-Kämpfen!";
 "LayoutMsg/Lobby_MenuMode_00/228" = "Versuche dich\nzuerst an Standard-\nSplatfest-Kämpfen!";
 "LayoutMsg/Lobby_MenuMode_00/229" = "Versuche dich\nzuerst an Standard-\nSplatfest-Kämpfen!";
-"LayoutMsg/Lobby_MenuMode_00/300" = "Kleiner Fisch";
-"LayoutMsg/Lobby_MenuMode_00/301" = "Flotte Sprotte";
-"LayoutMsg/Lobby_MenuMode_00/302" = "Toller Hecht";
-"LayoutMsg/Lobby_MenuMode_00/303" = "HAMMERHAI!";
 "LayoutMsg/Lobby_MenuMode_00/400" = "Sieg!";
 "LayoutMsg/Lobby_MenuMode_00/401" = "Verloren...";
 "LayoutMsg/Lobby_MenuMode_00/501" = "Dein Team lag zur Halbzeit in Führung,\ndeswegen steht diese Option nicht zur Verfügung.\nMöglicherweise werden dir jedoch in offenen\nSplatfest-Kämpfen Dreifarb-Kämpfe zugeteilt.";

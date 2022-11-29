@@ -1839,6 +1839,9 @@
 "CommonMsg/Gear/GearName_Clothes/AMB008" = "Tunique magique A";
 "CommonMsg/Gear/GearName_Clothes/AMB009" = "Armure d'Octaguerrier";
 "CommonMsg/Gear/GearName_Clothes/AMB010" = "Mains de mascotte";
+"CommonMsg/Gear/GearName_Clothes/AMB011" = "Manteau scolaire déchiré";
+"CommonMsg/Gear/GearName_Clothes/AMB012" = "Veste de judo";
+"CommonMsg/Gear/GearName_Clothes/AMB013" = "Armure Berserk";
 "CommonMsg/Gear/GearName_Clothes/AMB014" = "Uniforme scolaire B";
 "CommonMsg/Gear/GearName_Clothes/AMB015" = "Gilet scolaire B";
 "CommonMsg/Gear/GearName_Clothes/AMB017" = "Tunique magique B";
@@ -1965,6 +1968,9 @@
 "CommonMsg/Gear/GearName_Head/AMB008" = "Chapeau magique";
 "CommonMsg/Gear/GearName_Head/AMB009" = "Casque d'Octaguerrier";
 "CommonMsg/Gear/GearName_Head/AMB010" = "Tête de mascotte";
+"CommonMsg/Gear/GearName_Head/AMB011" = "Cure-dent arêtes";
+"CommonMsg/Gear/GearName_Head/AMB012" = "Bandeau de chef";
+"CommonMsg/Gear/GearName_Head/AMB013" = "Casque Berserk";
 "CommonMsg/Gear/GearName_Head/AMB016" = "Masque de ninja Mk I";
 "CommonMsg/Gear/GearName_Head/AMB017" = "Grande couronne princière";
 "CommonMsg/Gear/GearName_Head/CAP000" = "Casquette baseball";
@@ -2059,6 +2065,9 @@
 "CommonMsg/Gear/GearName_Shoes/AMB008" = "Bottines magiques";
 "CommonMsg/Gear/GearName_Shoes/AMB009" = "Solerets d'Octaguerrier";
 "CommonMsg/Gear/GearName_Shoes/AMB010" = "Pieds de mascotte";
+"CommonMsg/Gear/GearName_Shoes/AMB011" = "Sandales nouées hautes";
+"CommonMsg/Gear/GearName_Shoes/AMB012" = "Protège-chevilles";
+"CommonMsg/Gear/GearName_Shoes/AMB013" = "Bottes Berserk";
 "CommonMsg/Gear/GearName_Shoes/AMB014" = "Mocassins scolaires";
 "CommonMsg/Gear/GearName_Shoes/AMB015" = "Mocassins à franges";
 "CommonMsg/Gear/GearName_Shoes/BOT000" = "Bottes de moto";
@@ -2191,6 +2200,7 @@
 "CommonMsg/Glossary/Aori" = "Ayo";
 "CommonMsg/Glossary/Atarime" = "Macalamar";
 "CommonMsg/Glossary/AtarimeHimono" = "Macalamar";
+"CommonMsg/Glossary/Band01" = "Squid Squad";
 "CommonMsg/Glossary/BattleMemory" = "vidéo de match";
 "CommonMsg/Glossary/Byname" = "titre";
 "CommonMsg/Glossary/CardPack" = "jeu de cartes";
@@ -2219,6 +2229,8 @@
 "CommonMsg/Glossary/IdolA" = "Pasquale";
 "CommonMsg/Glossary/IdolB" = "Angie";
 "CommonMsg/Glossary/IdolC" = "Raimi";
+"CommonMsg/Glossary/IdolGroup_01" = "Calamazones";
+"CommonMsg/Glossary/IdolGroup_02" = "Tenta-Cool";
 "CommonMsg/Glossary/IdolGroup_03" = "Tridenfer";
 "CommonMsg/Glossary/Iida" = "Coralie";
 "CommonMsg/Glossary/Inkling" = "Inkling";
@@ -2293,6 +2305,7 @@
 "CommonMsg/Glossary/NamePlateBg" = "bannière";
 "CommonMsg/Glossary/Nigou" = "Numéro 2";
 "CommonMsg/Glossary/Octoling" = "Octaling";
+"CommonMsg/Glossary/PlatoonNew" = "escadron Espadon, nouvelle version";
 "CommonMsg/Glossary/PlayerAvatar" = "fantômes";
 "CommonMsg/Glossary/RealKumasan" = "M. Ours";
 "CommonMsg/Glossary/RoeCannon" = "canon à œufs";
@@ -2722,8 +2735,8 @@
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_10" = "Déco BM-1";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_11" = "Déco BM-2";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_13" = "Déco MTN-MTN";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "Logo calamar 3";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "Logo poulpe 3";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "Logo poulpe 3";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "Logo calamar 3";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_02" = "Logo Alpaj";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_03" = "Logo Apex";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_04" = "Logo calamar 2-BL";
@@ -4551,10 +4564,6 @@
 "LayoutMsg/Lobby_MenuMode_00/227" = "Essaie de participer\nà quelques festimatchs\nnormaux, d'abord !";
 "LayoutMsg/Lobby_MenuMode_00/228" = "Essaie de participer\nà quelques festimatchs\nnormaux, d'abord !";
 "LayoutMsg/Lobby_MenuMode_00/229" = "Essaie de participer\nà quelques festimatchs\nnormaux, d'abord !";
-"LayoutMsg/Lobby_MenuMode_00/300" = "Moyen...";
-"LayoutMsg/Lobby_MenuMode_00/301" = "Pas mal.";
-"LayoutMsg/Lobby_MenuMode_00/302" = "Classe !";
-"LayoutMsg/Lobby_MenuMode_00/303" = "Trop classe !";
 "LayoutMsg/Lobby_MenuMode_00/400" = "Victoire";
 "LayoutMsg/Lobby_MenuMode_00/401" = "Défaite";
 "LayoutMsg/Lobby_MenuMode_00/501" = "Cette option ne t'est pas accessible car ton camp\nétait en tête à l'Intermède. Toutefois, une guerre\ntricolore peut éclater automatiquement lors de tes\nparticipations à un festimatch ouvert.";

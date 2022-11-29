@@ -1786,7 +1786,7 @@
 "CommonMsg/Coop/CoopSkinName/COP005" = "バイトツナギ ブルー";
 "CommonMsg/Coop/CoopSkinName/COP006" = "バイトツナギ ブラック";
 "CommonMsg/Coop/CoopSkinName/COP007" = "バイトツナギ ホワイト";
-"CommonMsg/Coop/CoopStageName/Shakedent" = "ムニ・エ―ル海洋発電所";
+"CommonMsg/Coop/CoopStageName/Shakedent" = "ムニ・エール海洋発電所";
 "CommonMsg/Coop/CoopStageName/Shakespiral" = "アラマキ砦";
 "CommonMsg/Coop/CoopStageName/Shakeup" = "シェケナダム";
 "CommonMsg/Coop/CoopStageName/Tutorial" = "アラマキ砦";
@@ -1839,6 +1839,9 @@
 "CommonMsg/Gear/GearName_Clothes/AMB008" = "エンチャントローブS";
 "CommonMsg/Gear/GearName_Clothes/AMB009" = "タコティカルなよろい";
 "CommonMsg/Gear/GearName_Clothes/AMB010" = "ひれおくんのて";
+"CommonMsg/Gear/GearName_Clothes/AMB011" = "サキイカガクラン";
+"CommonMsg/Gear/GearName_Clothes/AMB012" = "ジュウドウギ クロオビ";
+"CommonMsg/Gear/GearName_Clothes/AMB013" = "バーサークアーマー";
 "CommonMsg/Gear/GearName_Clothes/AMB014" = "スクールブレザーR";
 "CommonMsg/Gear/GearName_Clothes/AMB015" = "スクールカーデ ネクタイ";
 "CommonMsg/Gear/GearName_Clothes/AMB017" = "エンチャントローブL";
@@ -1965,6 +1968,9 @@
 "CommonMsg/Gear/GearName_Head/AMB008" = "エンチャントハット";
 "CommonMsg/Gear/GearName_Head/AMB009" = "タコティカルなヘルム";
 "CommonMsg/Gear/GearName_Head/AMB010" = "ひれおくん";
+"CommonMsg/Gear/GearName_Head/AMB011" = "オシャブリボーン";
+"CommonMsg/Gear/GearName_Head/AMB012" = "タコハチ";
+"CommonMsg/Gear/GearName_Head/AMB013" = "バーサークヘル";
 "CommonMsg/Gear/GearName_Head/AMB016" = "イカカゲマスク甲";
 "CommonMsg/Gear/GearName_Head/AMB017" = "ヒメイトクラウンL";
 "CommonMsg/Gear/GearName_Head/CAP000" = "ウーニーズBBキャップ";
@@ -2059,6 +2065,9 @@
 "CommonMsg/Gear/GearName_Shoes/AMB008" = "エンチャントブーツ";
 "CommonMsg/Gear/GearName_Shoes/AMB009" = "タコティカルなすねあて";
 "CommonMsg/Gear/GearName_Shoes/AMB010" = "ひれおくんのあし";
+"CommonMsg/Gear/GearName_Shoes/AMB011" = "イダテンヒモサン";
+"CommonMsg/Gear/GearName_Shoes/AMB012" = "アンクルサポーター";
+"CommonMsg/Gear/GearName_Shoes/AMB013" = "バーサークグリーブ";
 "CommonMsg/Gear/GearName_Shoes/AMB014" = "スクールローファー スゲソ";
 "CommonMsg/Gear/GearName_Shoes/AMB015" = "キルトローファー スゲソ";
 "CommonMsg/Gear/GearName_Shoes/BOT000" = "モトクロスブーツ";
@@ -2191,6 +2200,7 @@
 "CommonMsg/Glossary/Aori" = "アオリ";
 "CommonMsg/Glossary/Atarime" = "アタリメ";
 "CommonMsg/Glossary/AtarimeHimono" = "アタリメ";
+"CommonMsg/Glossary/Band01" = "Squid Squad";
 "CommonMsg/Glossary/BattleMemory" = "バトルメモリー";
 "CommonMsg/Glossary/Byname" = "二つ名";
 "CommonMsg/Glossary/CardPack" = "カードパック";
@@ -2219,6 +2229,8 @@
 "CommonMsg/Glossary/IdolA" = "フウカ";
 "CommonMsg/Glossary/IdolB" = "ウツホ";
 "CommonMsg/Glossary/IdolC" = "マンタロー";
+"CommonMsg/Glossary/IdolGroup_01" = "Sea O'Colors\n(シオカラーズ)";
+"CommonMsg/Glossary/IdolGroup_02" = "テンタクルズ";
 "CommonMsg/Glossary/IdolGroup_03" = "すりみ連合";
 "CommonMsg/Glossary/Iida" = "イイダ";
 "CommonMsg/Glossary/Inkling" = "インクリング";
@@ -2293,6 +2305,7 @@
 "CommonMsg/Glossary/NamePlateBg" = "プレート";
 "CommonMsg/Glossary/Nigou" = "２号";
 "CommonMsg/Glossary/Octoling" = "オクトリング";
+"CommonMsg/Glossary/PlatoonNew" = "New!カラストンビ部隊";
 "CommonMsg/Glossary/PlayerAvatar" = "ブンシン";
 "CommonMsg/Glossary/RealKumasan" = "クマサン";
 "CommonMsg/Glossary/RoeCannon" = "イクラキャノン";
@@ -2321,7 +2334,7 @@
 "CommonMsg/Glossary/SakepuncherBulletSimpl" = "シャケコプター";
 "CommonMsg/Glossary/Sakerocket" = "コウモリ";
 "CommonMsg/Glossary/Sangou" = "３号";
-"CommonMsg/Glossary/Shakedent" = "ムニ・エ―ル海洋発電所";
+"CommonMsg/Glossary/Shakedent" = "ムニ・エール海洋発電所";
 "CommonMsg/Glossary/Shakespiral" = "アラマキ砦";
 "CommonMsg/Glossary/Shakeup" = "シェケナダム";
 "CommonMsg/Glossary/SpecialAttack" = "スペシャルアタック";
@@ -2722,8 +2735,8 @@
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_10" = "デコ HRT-SL";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_11" = "デコ HRT-DB";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_13" = "デコ YMY";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "ロゴ イカ３";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "ロゴ タコ３";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "ロゴ タコ３";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "ロゴ イカ３";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_02" = "ロゴ バラズシ";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_03" = "ロゴ シチリン";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_04" = "ロゴ イカ２-BL";
@@ -3550,7 +3563,7 @@
 "CommonMsg/Mission/TalkWorldAtarimeDried/Normal_03" = "３号の好物は何じゃ？ ワシはオハギが好きじゃ";
 "CommonMsg/Mission/TalkWorldAtarimeDried/Normal_04" = "ワシのアロハ、どこ行ったか知らんか？";
 "CommonMsg/Mission/TalkWorldAtarimeDried/Normal_05" = "３号、やはり イイ目をしておる…";
-"CommonMsg/Mission/TalkWorldAtarimeDried/Normal_06" = "ヒーロそうびの強化は やり直すこともできるぞィ\nメニューから確認されたしーッ！";
+"CommonMsg/Mission/TalkWorldAtarimeDried/Normal_06" = "ヒーローそうびの強化は やり直すこともできるぞィ\nメニューから確認されたしーッ！";
 "CommonMsg/Mission/TalkWorldAtarimeDried/Normal_07" = "ヒーローそうびをラグジュアリーにすると、\nコジャケのやる気も アップするようじゃな！";
 "CommonMsg/Mission/TalkWorldAtarimeDried/Progress_00" = "まさか すべてのヤカンを完全にクリアするとはのゥ！\n３号め、まったく すえおそろしいわィ！";
 "CommonMsg/Narration/Narration_Tips/Tips_01" = "に゛ゃっ！(キミはまだぜんぜんイカしてないぞ！\nまずはバトルポットに入って[color=0001]ナワバリバトル[color=ffff]だ！[page break]バトルで[color=0001]ケイケン値[color=ffff]をためて[color=0001]ランク[color=ffff]があがったら、\nいったん広場にもどって[color=0001]ブキ屋[color=ffff]に寄ってみよう！)";
@@ -3630,7 +3643,7 @@
 "CommonMsg/Narration/Narration_Tips/Tips_58" = "に゛ゃ！([color=0001]スプラッシュシールド[color=ffff]や[color=0001]グレートバリア[color=ffff]などは、\nこちらのインク攻撃を防いでしまう！[page break]しかし、これらに直接[color=0001]スプラッシュボム[color=ffff]や[color=0001]キューバンボム[color=ffff]を\nぶつけると すぐにボムを爆発させることができる[page break]これをうまく使えば、スプラッシュシールドの近くに\nかくれている相手を すぐに倒すこともできるぞ！[page break]逆に、自分がスプラッシュシールドを使う場合は、\n相手に利用されないよう注意しよう！[page break]試しに キューバンボムを\nスプラッシュシールドに ぶつけてみよう！)";
 "CommonMsg/Narration/Narration_Tips/Tips_58_Trial" = "[color=0001]キューバンボム[color=ffff]でマトを壊そう！ [group=0003 type=000a params=29 5c 0f 40 05 00 00 00]で投げて、[color=0001]スプラッシュシールド[color=ffff]に\n当たるとすぐに爆発する";
 "CommonMsg/Narration/Narration_Tips/Tips_59" = "に゛に゛(ロビーにある[color=0001]売店[color=ffff]に行ったことはあるか？[page break]バトルで得られる[color=0001]ケイケン値[color=ffff]や[color=0001]おカネ[color=ffff]を増やしてくれる\n[color=0001]とくべつなフード[color=ffff]や[color=0001]ドリンク[color=ffff]を売っているらしいぞ[page break]ただ、フードやドリンクを買うには[color=0001]チケット[color=ffff]が必要らしい\nもし持っていたら売店に行ってみるといいぞ)";
-"CommonMsg/Narration/Narration_Tips/Tips_60" = "に゛っに゛(自分を見つめなおしたくなったら\nロビー端末の[color=0001]メモリープレーヤー[color=ffff]を使うといい[page break]自分が参加したバトルの[page break][color=0001]バトルメモリーを見る[color=ffff]ことができるぞ[page break]ロビー端末の[color=0001]コード入力[color=ffff]でリプレイコードを入力すれば\n他の人のリプレイをダウンロードできる[page break]自分のやり方を振り返り、他の人の立ち回りを学んで\n次のバトルに活かすといいぞ！)";
+"CommonMsg/Narration/Narration_Tips/Tips_60" = "に゛っに゛(自分を見つめなおしたくなったら\nロビー端末の[color=0001]メモリープレーヤー[color=ffff]を使うといい[page break]自分が参加したバトルの\n[color=0001]バトルメモリーを見る[color=ffff]ことができるぞ[page break]ロビー端末の[color=0001]コード入力[color=ffff]でリプレイコードを入力すれば\n他の人のリプレイをダウンロードできる[page break]自分のやり方を振り返り、他の人の立ち回りを学んで\n次のバトルに活かすといいぞ！)";
 "CommonMsg/Narration/Narration_Tips/Tips_61" = "に゛ゃ(バトルで迷子になったことはないか？[page break]そんなことがないように、ステージを[color=0001]さんぽ[color=ffff]して\nしっかり下見しておくといいぞ！[page break]さんぽしたいときは、広場にいる[color=0001]ガイドさん[color=ffff]に話しかけよう\nステージの地形を覚えれば、バトルを有利に進められるぞ！)";
 "CommonMsg/Narration/Narration_Tips/Tips_62" = "に゛に゛(ギアに付いている★は その[color=0001]ギアのレア度[color=ffff]だ\nレア度が高いギアには追加ギアパワーを最大[color=0001]３つ[color=ffff]付けられるぞ[page break]ショップでレア度が高いギアを買ってもいいし\n[color=0001]同じギアを買う[color=ffff]ことでレア度を上げてもいい[page break]広場にいる[color=0001]スパイキ[color=ffff]ーにお願いするのもアリだ\nお気に入りのギアのレア度を上げていこう！)";
 "CommonMsg/Narration/Narration_Tips/Tips_63" = "に゛(ブキには[color=0001]じゅくれん度[color=ffff]がある！ そのブキでバトル\nすればするほど じゅくれん度が上がるぞ[page break]じゅくれん度が上がると [color=0001]ブキチライセンス[color=ffff]やブキの[color=0001]ステッカー[color=ffff]、\n[color=0001]バッジ[color=ffff]など いろいろな景品をゲットできる[page break]ブキを使い込んだ証として\nステッカーやバッジを かざりつけよう！)";
@@ -3771,10 +3784,10 @@
 "CommonMsg/UnitName/CoopDangerLevel" = "[group=0002 type=0000 params=00 03 00 00]%";
 "CommonMsg/UnitName/CoopGradeExp" = "[group=0002 type=0000 params=00 03 00 00]/[group=0002 type=0000 params=01 03 00 00]";
 "CommonMsg/UnitName/CoopRewardPoint" = "[group=0002 type=0000 params=00 05 00 00]p";
-"CommonMsg/UnitName/Date01" = "[group=0002 type=0000 params=00 04 01 00]/[group=0002 type=0000 params=01 02 01 00]/[group=0002 type=0000 params=02 02 01 00]";
-"CommonMsg/UnitName/DateTime00" = "[group=0002 type=0000 params=00 02 01 00]/[group=0002 type=0000 params=01 02 01 00]  [group=0002 type=0000 params=02 02 01 00]:[group=0002 type=0000 params=03 02 01 00]";
-"CommonMsg/UnitName/DateTime01" = "[group=0002 type=0000 params=00 04 01 00]/[group=0002 type=0000 params=01 02 01 00]/[group=0002 type=0000 params=02 02 01 00]  [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
-"CommonMsg/UnitName/DateTime02" = "[group=0002 type=0000 params=00 02 01 00]/[group=0002 type=0000 params=01 02 01 00] ([group=0004 type=0010 params=02 00 00 00]) [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
+"CommonMsg/UnitName/Date01" = "[group=0002 type=0000 params=00 04 01 00]/[group=0002 type=0000 params=01 02 00 00]/[group=0002 type=0000 params=02 02 00 00]";
+"CommonMsg/UnitName/DateTime00" = "[group=0002 type=0000 params=00 02 00 00]/[group=0002 type=0000 params=01 02 00 00]  [group=0002 type=0000 params=02 02 01 00]:[group=0002 type=0000 params=03 02 01 00]";
+"CommonMsg/UnitName/DateTime01" = "[group=0002 type=0000 params=00 04 01 00]/[group=0002 type=0000 params=01 02 00 00]/[group=0002 type=0000 params=02 02 00 00]  [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
+"CommonMsg/UnitName/DateTime02" = "[group=0002 type=0000 params=00 02 00 00]/[group=0002 type=0000 params=01 02 00 00] ([group=0004 type=0010 params=02 00 00 00]) [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
 "CommonMsg/UnitName/FestPowCount" = "[group=0002 type=0000 params=00 01 00 00]/[group=0002 type=0000 params=01 01 00 00]";
 "CommonMsg/UnitName/FestPower" = "[group=0004 type=0004 params=00 00 00 00 00 cd]パワー";
 "CommonMsg/UnitName/FestRankExp" = "[group=0002 type=0000 params=00 04 00 00]/[group=0002 type=0000 params=01 04 00 00]";
@@ -4551,10 +4564,6 @@
 "LayoutMsg/Lobby_MenuMode_00/227" = "まずは\nフェスマッチ（オープン）に\n参加してみよう！";
 "LayoutMsg/Lobby_MenuMode_00/228" = "まずは\nフェスマッチ（オープン）に\n参加してみよう！";
 "LayoutMsg/Lobby_MenuMode_00/229" = "まずは\nフェスマッチ（オープン）に\n参加してみよう！";
-"LayoutMsg/Lobby_MenuMode_00/300" = "チョーシあげていこう";
-"LayoutMsg/Lobby_MenuMode_00/301" = "チョーシぼちぼち";
-"LayoutMsg/Lobby_MenuMode_00/302" = "チョーシいいね！";
-"LayoutMsg/Lobby_MenuMode_00/303" = "チョーシサイコー！！";
 "LayoutMsg/Lobby_MenuMode_00/400" = "WIN";
 "LayoutMsg/Lobby_MenuMode_00/401" = "LOSE";
 "LayoutMsg/Lobby_MenuMode_00/501" = "所属チームが中間１位のため選べません\nトリカラバトルは、フェスマッチ（オープン）で\n発生することがあります";

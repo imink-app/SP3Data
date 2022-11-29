@@ -1839,6 +1839,9 @@
 "CommonMsg/Gear/GearName_Clothes/AMB008" = "Vestito stregonesco A";
 "CommonMsg/Gear/GearName_Clothes/AMB009" = "Corazza da octoguerriero";
 "CommonMsg/Gear/GearName_Clothes/AMB010" = "Manone da mascotte";
+"CommonMsg/Gear/GearName_Clothes/AMB011" = "Soprabito strappato";
+"CommonMsg/Gear/GearName_Clothes/AMB012" = "Gi con cintura nera";
+"CommonMsg/Gear/GearName_Clothes/AMB013" = "Armatura furiosa";
 "CommonMsg/Gear/GearName_Clothes/AMB014" = "Uniforme scolastica B";
 "CommonMsg/Gear/GearName_Clothes/AMB015" = "Cardigan scolastico B";
 "CommonMsg/Gear/GearName_Clothes/AMB017" = "vestito stregonesco B";
@@ -1965,6 +1968,9 @@
 "CommonMsg/Gear/GearName_Head/AMB008" = "Cappello stregonesco";
 "CommonMsg/Gear/GearName_Head/AMB009" = "Elmo da octoguerriero";
 "CommonMsg/Gear/GearName_Head/AMB010" = "Testona da mascotte";
+"CommonMsg/Gear/GearName_Head/AMB011" = "Lisca interdentale";
+"CommonMsg/Gear/GearName_Head/AMB012" = "Fascia octopus";
+"CommonMsg/Gear/GearName_Head/AMB013" = "Elmo furioso";
 "CommonMsg/Gear/GearName_Head/AMB016" = "Maschera ninja I";
 "CommonMsg/Gear/GearName_Head/AMB017" = "Corona di Alga (L)";
 "CommonMsg/Gear/GearName_Head/CAP000" = "Berretto AS Riccidimare";
@@ -2059,6 +2065,9 @@
 "CommonMsg/Gear/GearName_Shoes/AMB008" = "Stivaletti stregoneschi";
 "CommonMsg/Gear/GearName_Shoes/AMB009" = "Calzari da octoguerriero";
 "CommonMsg/Gear/GearName_Shoes/AMB010" = "Piedoni da mascotte";
+"CommonMsg/Gear/GearName_Shoes/AMB011" = "Sandali di corda";
+"CommonMsg/Gear/GearName_Shoes/AMB012" = "Paracaviglie";
+"CommonMsg/Gear/GearName_Shoes/AMB013" = "Stivali furiosi";
 "CommonMsg/Gear/GearName_Shoes/AMB014" = "Mocassini neri (base)";
 "CommonMsg/Gear/GearName_Shoes/AMB015" = "Mocassini con frangia (base)";
 "CommonMsg/Gear/GearName_Shoes/BOT000" = "Stivali da moto";
@@ -2191,6 +2200,7 @@
 "CommonMsg/Glossary/Aori" = "Stella";
 "CommonMsg/Glossary/Atarime" = "Seppia";
 "CommonMsg/Glossary/AtarimeHimono" = "Seppia";
+"CommonMsg/Glossary/Band01" = "Squid Squad";
 "CommonMsg/Glossary/BattleMemory" = "replay";
 "CommonMsg/Glossary/Byname" = "titolo";
 "CommonMsg/Glossary/CardPack" = "bustina di carte";
@@ -2219,6 +2229,8 @@
 "CommonMsg/Glossary/IdolA" = "Pinnuccia";
 "CommonMsg/Glossary/IdolB" = "Morena";
 "CommonMsg/Glossary/IdolC" = "Mantaleo";
+"CommonMsg/Glossary/IdolGroup_01" = "Sea Sirens";
+"CommonMsg/Glossary/IdolGroup_02" = "Tenta Cool";
 "CommonMsg/Glossary/IdolGroup_03" = "Trio Triglio";
 "CommonMsg/Glossary/Iida" = "Nori";
 "CommonMsg/Glossary/Inkling" = "Inkling";
@@ -2293,6 +2305,7 @@
 "CommonMsg/Glossary/NamePlateBg" = "sfondo";
 "CommonMsg/Glossary/Nigou" = "Numero 2";
 "CommonMsg/Glossary/Octoling" = "Octoling";
+"CommonMsg/Glossary/PlatoonNew" = "Nuova Divisione Branchia";
 "CommonMsg/Glossary/PlayerAvatar" = "sagome";
 "CommonMsg/Glossary/RealKumasan" = "Ursus";
 "CommonMsg/Glossary/RoeCannon" = "cannuovo";
@@ -2722,8 +2735,8 @@
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_10" = "Decorazione ESP-SI";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_11" = "Decorazione ESP-DO";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_13" = "Decorazione MON";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "Logo Calamaro 3";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "Logo Polpo 3";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "Logo Polpo 3";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "Logo Calamaro 3";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_02" = "Logo BaraS";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_03" = "Logo Car-bon";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_04" = "Logo Calamaro 2 BL";
@@ -4551,10 +4564,6 @@
 "LayoutMsg/Lobby_MenuMode_00/227" = "Prova prima qualche\npartita tematica\n(Aperta)!";
 "LayoutMsg/Lobby_MenuMode_00/228" = "Prova prima qualche\npartita tematica\n(Aperta)!";
 "LayoutMsg/Lobby_MenuMode_00/229" = "Prova prima qualche\npartita tematica\n(Aperta)!";
-"LayoutMsg/Lobby_MenuMode_00/300" = "Migliorabile!";
-"LayoutMsg/Lobby_MenuMode_00/301" = "Accettabile!";
-"LayoutMsg/Lobby_MenuMode_00/302" = "Notevole!";
-"LayoutMsg/Lobby_MenuMode_00/303" = "Inarrestabile!";
 "LayoutMsg/Lobby_MenuMode_00/400" = "Vittoria";
 "LayoutMsg/Lobby_MenuMode_00/401" = "Sconfitta";
 "LayoutMsg/Lobby_MenuMode_00/501" = "La tua squadra era in prima posizione all'intervallo,\nquindi non puoi scegliere questa opzione. Tuttavia,\nle partite tricolore potrebbero automaticamente\nattivarsi per te nelle partite tematiche aperte.";

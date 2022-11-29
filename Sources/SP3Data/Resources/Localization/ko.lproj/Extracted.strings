@@ -1839,6 +1839,9 @@
 "CommonMsg/Gear/GearName_Clothes/AMB008" = "인챈트 로브 S";
 "CommonMsg/Gear/GearName_Clothes/AMB009" = "문어티컬한 갑옷";
 "CommonMsg/Gear/GearName_Clothes/AMB010" = "히레오 글로브";
+"CommonMsg/Gear/GearName_Clothes/AMB011" = "오징어채 학생복";
+"CommonMsg/Gear/GearName_Clothes/AMB012" = "검은 띠 유도복";
+"CommonMsg/Gear/GearName_Clothes/AMB013" = "버서크 아머";
 "CommonMsg/Gear/GearName_Clothes/AMB014" = "스쿨 유니폼 R";
 "CommonMsg/Gear/GearName_Clothes/AMB015" = "스쿨 넥타이 카디건";
 "CommonMsg/Gear/GearName_Clothes/AMB017" = "인챈트 로브 L";
@@ -1965,6 +1968,9 @@
 "CommonMsg/Gear/GearName_Head/AMB008" = "인챈트 해트";
 "CommonMsg/Gear/GearName_Head/AMB009" = "문어티컬한 헬름";
 "CommonMsg/Gear/GearName_Head/AMB010" = "히레오 헤드";
+"CommonMsg/Gear/GearName_Head/AMB011" = "생선뼈";
+"CommonMsg/Gear/GearName_Head/AMB012" = "문어 이마 띠";
+"CommonMsg/Gear/GearName_Head/AMB013" = "버서크 헬름";
 "CommonMsg/Gear/GearName_Head/AMB016" = "오징어 그림자 마스크 갑";
 "CommonMsg/Gear/GearName_Head/AMB017" = "히메이트 크라운 L";
 "CommonMsg/Gear/GearName_Head/CAP000" = "우니즈 BB 캡";
@@ -2059,6 +2065,9 @@
 "CommonMsg/Gear/GearName_Shoes/AMB008" = "인챈트 부츠";
 "CommonMsg/Gear/GearName_Shoes/AMB009" = "문어티컬한 레그 가드";
 "CommonMsg/Gear/GearName_Shoes/AMB010" = "히레오 슈즈";
+"CommonMsg/Gear/GearName_Shoes/AMB011" = "짚신";
+"CommonMsg/Gear/GearName_Shoes/AMB012" = "앵클 서포터";
+"CommonMsg/Gear/GearName_Shoes/AMB013" = "버서크 그리브";
 "CommonMsg/Gear/GearName_Shoes/AMB014" = "맨발 스쿨 로퍼";
 "CommonMsg/Gear/GearName_Shoes/AMB015" = "맨발 킬트 로퍼";
 "CommonMsg/Gear/GearName_Shoes/BOT000" = "모터크로스 부츠";
@@ -2191,6 +2200,7 @@
 "CommonMsg/Glossary/Aori" = "아오리";
 "CommonMsg/Glossary/Atarime" = "마르징오";
 "CommonMsg/Glossary/AtarimeHimono" = "마르징오";
+"CommonMsg/Glossary/Band01" = "Squid Squad";
 "CommonMsg/Glossary/BattleMemory" = "배틀 메모리";
 "CommonMsg/Glossary/Byname" = "별명";
 "CommonMsg/Glossary/CardPack" = "카드 팩";
@@ -2219,6 +2229,8 @@
 "CommonMsg/Glossary/IdolA" = "후우카";
 "CommonMsg/Glossary/IdolB" = "우츠호";
 "CommonMsg/Glossary/IdolC" = "만타로";
+"CommonMsg/Glossary/IdolGroup_01" = "Squid Sisters\n(오징어 시스터즈)";
+"CommonMsg/Glossary/IdolGroup_02" = "텐타클즈";
 "CommonMsg/Glossary/IdolGroup_03" = "삼합파";
 "CommonMsg/Glossary/Iida" = "이이다";
 "CommonMsg/Glossary/Inkling" = "잉클링";
@@ -2293,6 +2305,7 @@
 "CommonMsg/Glossary/NamePlateBg" = "플레이트";
 "CommonMsg/Glossary/Nigou" = "2호";
 "CommonMsg/Glossary/Octoling" = "옥토링";
+"CommonMsg/Glossary/PlatoonNew" = "New! 오징어입 부대";
 "CommonMsg/Glossary/PlayerAvatar" = "분신";
 "CommonMsg/Glossary/RealKumasan" = "Mr. 베어";
 "CommonMsg/Glossary/RoeCannon" = "연어알 캐넌";
@@ -2722,8 +2735,8 @@
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_10" = "EX0-1 데코";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_11" = "EX0-2 데코";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Decoration_13" = "MTNMTN 데코";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "오징어 3 로고";
-"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "문어 3 로고";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_00" = "문어 3 로고";
+"CommonMsg/Goods/GoodsName/Stc_Sti_Logo_01" = "오징어 3 로고";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_02" = "화이트아웃 로고";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_03" = "니들워크 로고";
 "CommonMsg/Goods/GoodsName/Stc_Sti_Logo_04" = "오징어 2-BL 로고";
@@ -3771,10 +3784,10 @@
 "CommonMsg/UnitName/CoopDangerLevel" = "[group=0002 type=0000 params=00 03 00 00]%";
 "CommonMsg/UnitName/CoopGradeExp" = "[group=0002 type=0000 params=00 03 00 00]/[group=0002 type=0000 params=01 03 00 00]";
 "CommonMsg/UnitName/CoopRewardPoint" = "[group=0002 type=0000 params=00 05 00 00]p";
-"CommonMsg/UnitName/Date01" = "[group=0002 type=0000 params=00 04 01 00]/[group=0002 type=0000 params=01 02 01 00]/[group=0002 type=0000 params=02 02 01 00]";
-"CommonMsg/UnitName/DateTime00" = "[group=0002 type=0000 params=00 02 01 00]/[group=0002 type=0000 params=01 02 01 00]  [group=0002 type=0000 params=02 02 01 00]:[group=0002 type=0000 params=03 02 01 00]";
-"CommonMsg/UnitName/DateTime01" = "[group=0002 type=0000 params=00 04 01 00]/[group=0002 type=0000 params=01 02 01 00]/[group=0002 type=0000 params=02 02 01 00]  [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
-"CommonMsg/UnitName/DateTime02" = "[group=0002 type=0000 params=00 02 01 00]/[group=0002 type=0000 params=01 02 01 00] ([group=0004 type=0010 params=02 00 00 00]) [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
+"CommonMsg/UnitName/Date01" = "[group=0002 type=0000 params=00 04 01 00]/[group=0002 type=0000 params=01 02 00 00]/[group=0002 type=0000 params=02 02 00 00]";
+"CommonMsg/UnitName/DateTime00" = "[group=0002 type=0000 params=00 02 00 00]/[group=0002 type=0000 params=01 02 00 00]  [group=0002 type=0000 params=02 02 01 00]:[group=0002 type=0000 params=03 02 01 00]";
+"CommonMsg/UnitName/DateTime01" = "[group=0002 type=0000 params=00 04 01 00]/[group=0002 type=0000 params=01 02 00 00]/[group=0002 type=0000 params=02 02 00 00]  [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
+"CommonMsg/UnitName/DateTime02" = "[group=0002 type=0000 params=00 02 00 00]/[group=0002 type=0000 params=01 02 00 00] ([group=0004 type=0010 params=02 00 00 00]) [group=0002 type=0000 params=03 02 01 00]:[group=0002 type=0000 params=04 02 01 00]";
 "CommonMsg/UnitName/FestPowCount" = "[group=0002 type=0000 params=00 01 00 00]/[group=0002 type=0000 params=01 01 00 00]";
 "CommonMsg/UnitName/FestPower" = "[group=0004 type=0004 params=00 00 00 00 00 cd] 파워";
 "CommonMsg/UnitName/FestRankExp" = "[group=0002 type=0000 params=00 04 00 00]/[group=0002 type=0000 params=01 04 00 00]";
@@ -4551,10 +4564,6 @@
 "LayoutMsg/Lobby_MenuMode_00/227" = "먼저\n페스티벌 매치(오픈)에\n참가해 보자!";
 "LayoutMsg/Lobby_MenuMode_00/228" = "먼저\n페스티벌 매치(오픈)에\n참가해 보자!";
 "LayoutMsg/Lobby_MenuMode_00/229" = "먼저\n페스티벌 매치(오픈)에\n참가해 보자!";
-"LayoutMsg/Lobby_MenuMode_00/300" = "컨디션을 끌어올리자";
-"LayoutMsg/Lobby_MenuMode_00/301" = "컨디션 이상 무";
-"LayoutMsg/Lobby_MenuMode_00/302" = "컨디션 좋아!";
-"LayoutMsg/Lobby_MenuMode_00/303" = "컨디션 최고!!";
 "LayoutMsg/Lobby_MenuMode_00/400" = "WIN";
 "LayoutMsg/Lobby_MenuMode_00/401" = "LOSE";
 "LayoutMsg/Lobby_MenuMode_00/501" = "소속 팀이 중간 1위이므로 선택할 수 없습니다\n트리컬러 배틀은 페스티벌 매치(오픈)에서\n발생할 수 있습니다";
