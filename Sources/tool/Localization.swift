@@ -1,10 +1,11 @@
 import Foundation
 
-let resourcesUrl = URL(fileURLWithPath: #filePath)
+private let resourcesUrl = URL(fileURLWithPath: #filePath)
     .deletingLastPathComponent()
     .deletingLastPathComponent()
     .appendingPathComponent("SP3Data/Resources")
 
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
 func parseStringFile() throws {
     let srcDir = resourcesUrl.appendingPathComponent("SP3ExtractedData/language")
     let dstDir = resourcesUrl.appendingPathComponent("Localization")
@@ -33,13 +34,54 @@ func parseStringFile() throws {
         var result = ""
         for (path, item) in json.sorted(by: { $0.key < $1.key }) {
             for (key, string) in item.sorted(by: { $0.key < $1.key }) {
-                // TODO: parse something like [color=ffff] and [group=0004 type=0007 params=00 00 00 00]
-                let str = string.replacingOccurrences(of: "\n", with: "\\n")
-                    .replacingOccurrences(of: #"""#, with: #"\""#)
-                result += "\"\(path)/\(key)\" = \"\(str)\";\n"
+                result += "\"\(path)/\(key)\" = \"\(processLocalizedString(string))\";\n"
             }
         }
         try FileManager().createDirectory(at: l10nDir, withIntermediateDirectories: true)
         try result.write(to: dstUrl, atomically: true, encoding: .utf8)
     }
+}
+
+import RegexBuilder
+
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+private func processLocalizedString(_ str: String) -> String {
+    let colorfulText = Regex {
+        One("[color=0001]")
+        Capture {
+            ZeroOrMore(.any, .reluctant)
+        }
+        One("[color=ffff]")
+    }
+    let fadingText = Regex {
+        One("[color=0000]")
+        Capture {
+            ZeroOrMore(.any, .reluctant)
+        }
+        One("[color=ffff]")
+    }
+    let custom = Regex {
+        "[group="
+        Capture {
+            OneOrMore(.any)
+        }
+        " type="
+        Capture {
+            OneOrMore(.any)
+        }
+        " params="
+        Capture {
+            ZeroOrMore(.any)
+        }
+        "]"
+    }
+    
+    // TODO: parse something like [group=0004 type=0007 params=00 00 00 00]
+    return str
+        .replacingOccurrences(of: "\n", with: #"\n"#)
+        .replacingOccurrences(of: "[page break]", with: "↡")
+        .replacingOccurrences(of: #"""#, with: #"\""#)
+        .replacing(colorfulText) { $0.1.isEmpty ? "" : "**\($0.1)**" } // bold
+        .replacing(fadingText) { $0.1.isEmpty ? "" : "_\($0.1)_" } // italic
+        .replacing(custom) { _ in "�" }
 }
